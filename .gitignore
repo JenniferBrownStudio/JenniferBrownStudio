@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Claude Code local/personal config (keep out of shared repo)
+.claude/settings.local.json
+.claude/hooks/
+
+# Python
+__pycache__/
+*.pyc
