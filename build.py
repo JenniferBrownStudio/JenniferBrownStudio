@@ -182,15 +182,9 @@ def cta_band():
 
 # ============================ HOME ============================
 HOME = """    <section class="hero">
-      <div class="hero__slides">
-        <div class="hero__slide is-active" style="background-image:url('assets/img/home/Headshot_for_Home_Page.jpg')"></div>
-        <div class="hero__slide" style="background-image:url('assets/img/home/performance_dates_pic.jpg')"></div>
-        <div class="hero__slide" style="background-image:url('assets/img/home/Kenzie-piano_copy.jpg')"></div>
-        <div class="hero__slide" style="background-image:url('assets/img/home/PT_home_page.jpg')"></div>
-      </div>
-      <div class="hero__inner">
-        <div class="container">
-          <p class="eyebrow" style="color:var(--gold)">Performer · Teacher · Fitness Coach</p>
+      <div class="hero__split">
+        <div class="hero__panel">
+          <p class="eyebrow" style="color:var(--gold)">Performer &middot; Teacher &middot; Fitness Coach</p>
           <h1>A voice for the stage, a heart for teaching.</h1>
           <p>Jennifer Brown brings twenty years of professional performance to private voice, piano and acting lessons &mdash; plus energizing fitness classes &mdash; right here in Rome, New York.</p>
           <div class="hero__cta">
@@ -198,8 +192,16 @@ HOME = """    <section class="hero">
             <a class="btn btn--ghost" href="performances.html" style="color:#fff;border-color:rgba(255,255,255,.6)">See performances</a>
           </div>
         </div>
+        <div class="hero__media">
+          <div class="hero__slides">
+            <div class="hero__slide is-active" style="background-image:url('assets/img/headshots/Copy_of_green.jpg')"></div>
+            <div class="hero__slide" style="background-image:url('assets/img/portfolio/romance_romance/RomanceWaltz.jpg')"></div>
+            <div class="hero__slide" style="background-image:url('assets/img/home/Kenzie-piano_copy.jpg')"></div>
+            <div class="hero__slide" style="background-image:url('assets/img/portfolio/fitness/yoga2.jpg')"></div>
+          </div>
+          <div class="hero__dots" aria-hidden="false"></div>
+        </div>
       </div>
-      <div class="hero__dots" aria-hidden="false"></div>
     </section>
 
     <section class="section">
@@ -238,7 +240,7 @@ HOME = """    <section class="hero">
             </div>
           </article>
           <article class="pillar reveal">
-            <div class="pillar__img" style="background-image:url('assets/img/home/PT_home_page.jpg')"></div>
+            <div class="pillar__img" style="background-image:url('assets/img/portfolio/fitness/yoga2.jpg')"></div>
             <div class="pillar__body">
               <h3>Fitness</h3>
               <p class="pillar__lead">Certified personal training and joyful group classes &mdash; zero judgment, 100% fun.</p>
