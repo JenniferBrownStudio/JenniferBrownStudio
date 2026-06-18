@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:jenniferbernstone.com)",
+      "Bash(curl -sL -A \"Mozilla/5.0\" https://jenniferbernstone.com -o home.html)",
+      "Bash(echo \"---STATUS $?---\")"
+    ]
+  }
+}
