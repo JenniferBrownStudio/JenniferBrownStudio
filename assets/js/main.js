@@ -136,8 +136,8 @@
       var subject = encodeURIComponent(form.subject.value || "Website inquiry");
       var message = encodeURIComponent(form.message.value || "");
       var body = "Name: " + name + "%0D%0AEmail: " + email + "%0D%0A%0D%0A" + message;
-      window.location.href = "mailto:jennifer@jenniferbrown.xyz?subject=" + subject + "&body=" + body;
-      if (status) status.textContent = "Opening your email app… if nothing happens, email jennifer@jenniferbrown.xyz directly.";
+      window.location.href = "mailto:JenniferBrownStudio@gmail.com?subject=" + subject + "&body=" + body;
+      if (status) status.textContent = "Opening your email app… if nothing happens, email JenniferBrownStudio@gmail.com directly.";
     });
   }
 

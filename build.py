@@ -10,10 +10,12 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 
 SITE_NAME = "Jennifer Brown"
 TAGLINE = "Music &amp; Wellness Studio"
-EMAIL = "jennifer@jenniferbrown.xyz"
+EMAIL = "JenniferBrownStudio@gmail.com"
 PHONE = "646-526-8312"
 LOCATION = "Rome, New York"
-FACEBOOK = "https://www.facebook.com/"
+FACEBOOK = "https://www.facebook.com/jennifer.brown.815600"
+INSTAGRAM = "https://www.instagram.com/HealthyMusicNut"
+INSTAGRAM_HANDLE = "@HealthyMusicNut"
 
 # ----------------------------------------------------------------------------
 # Navigation model: (label, href, [submenu])
@@ -30,12 +32,13 @@ NAV = [
         ("Singing", "lessons-singing.html"),
         ("Piano", "lessons-piano.html"),
         ("Acting", "lessons-acting.html"),
+        ("Ballet", "lessons-ballet.html"),
         ("Workshops &amp; Group", "lessons-workshops.html"),
     ], "teaching"),
     ("Fitness", "personal-training.html", [
         ("Personal Training", "personal-training.html"),
-        ("Zumba", "zumba.html"),
-        ("Other Classes", "fitness-classes.html"),
+        ("Nutrition", "nutrition.html"),
+        ("Age Well &amp; Vibrantly", "age-well.html"),
     ], "fitness"),
     ("Bio", "bio.html", None, "bio"),
     ("Contact", "contact.html", None, "contact"),
@@ -114,6 +117,7 @@ def page(filename, title, description, body, active, hero=False):
           <p>Voice, piano &amp; acting instruction, fitness coaching, and live performance — based in {LOCATION}.</p>
           <div class="social" style="margin-top:1rem">
             <a href="{FACEBOOK}" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+            <a href="{INSTAGRAM}" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
             <a href="mailto:{EMAIL}" aria-label="Email">@</a>
           </div>
         </div>
@@ -186,7 +190,7 @@ HOME = """    <section class="hero">
         <div class="hero__panel">
           <p class="eyebrow" style="color:var(--gold)">Performer &middot; Teacher &middot; Fitness Coach</p>
           <h1>A voice for the stage, a heart for teaching.</h1>
-          <p>Jennifer Brown brings twenty years of professional performance to private voice, piano and acting lessons &mdash; plus energizing fitness classes &mdash; right here in Rome, New York.</p>
+          <p>Jennifer Brown brings twenty years of professional performance to private voice, piano, acting &amp; ballet lessons &ndash; plus energizing fitness classes &ndash; right here in Rome, New York and online.</p>
           <div class="hero__cta">
             <a class="btn btn--gold" href="contact.html">Book a lesson</a>
             <a class="btn btn--ghost" href="performances.html" style="color:#fff;border-color:rgba(255,255,255,.6)">See performances</a>
@@ -194,7 +198,7 @@ HOME = """    <section class="hero">
         </div>
         <div class="hero__media">
           <div class="hero__slides">
-            <div class="hero__slide is-active" style="background-image:url('assets/img/headshots/Copy_of_green.jpg')"></div>
+            <div class="hero__slide is-active" style="background-image:url('assets/img/headshots/jennifer-brown-headshot.jpg');background-position:center 25%"></div>
             <div class="hero__slide" style="background-image:url('assets/img/portfolio/romance_romance/RomanceWaltz.jpg')"></div>
             <div class="hero__slide" style="background-image:url('assets/img/home/Kenzie-piano_copy.jpg')"></div>
             <div class="hero__slide" style="background-image:url('assets/img/portfolio/fitness/yoga2.jpg')"></div>
@@ -221,6 +225,7 @@ HOME = """    <section class="hero">
                 <li><a href="photos.html">Acting</a></li>
                 <li><a href="media.html">Singing</a></li>
                 <li><a href="resume.html">Choreography</a></li>
+                <li><a href="contact.html">Emcee/Speaker</a></li>
               </ul>
               <a class="btn btn--sm" href="performances.html">Explore performing</a>
             </div>
@@ -229,11 +234,12 @@ HOME = """    <section class="hero">
             <div class="pillar__img" style="background-image:url('assets/img/home/Kenzie-piano_copy.jpg')"></div>
             <div class="pillar__body">
               <h3>Teaching</h3>
-              <p class="pillar__lead">Private voice, piano and acting lessons for all ages &mdash; structured, encouraging and a lot of fun.</p>
+              <p class="pillar__lead">Private voice, piano, acting and ballet lessons for all ages &mdash; structured, encouraging and a lot of fun.</p>
               <ul class="pillar__links">
                 <li><a href="lessons-singing.html">Singing</a></li>
                 <li><a href="lessons-piano.html">Piano</a></li>
                 <li><a href="lessons-acting.html">Acting</a></li>
+                <li><a href="lessons-ballet.html">Ballet</a></li>
                 <li><a href="lessons-workshops.html">Group</a></li>
               </ul>
               <a class="btn btn--sm" href="lessons-singing.html">Explore teaching</a>
@@ -242,12 +248,12 @@ HOME = """    <section class="hero">
           <article class="pillar reveal">
             <div class="pillar__img" style="background-image:url('assets/img/portfolio/fitness/yoga2.jpg')"></div>
             <div class="pillar__body">
-              <h3>Fitness</h3>
-              <p class="pillar__lead">Certified personal training and joyful group classes &mdash; zero judgment, 100% fun.</p>
+              <h3>Fitness &amp; Wellness</h3>
+              <p class="pillar__lead">Certified personal training, sports nutrition and vibrant healthy-aging &mdash; in person and online.</p>
               <ul class="pillar__links">
-                <li><a href="personal-training.html">Training</a></li>
-                <li><a href="zumba.html">Zumba</a></li>
-                <li><a href="fitness-classes.html">Classes</a></li>
+                <li><a href="personal-training.html">Personal Training</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="age-well.html">Age Well &amp; Vibrantly</a></li>
               </ul>
               <a class="btn btn--sm" href="personal-training.html">Explore fitness</a>
             </div>
@@ -259,7 +265,7 @@ HOME = """    <section class="hero">
     <section class="section section--cream2">
       <div class="container split">
         <div class="split__img reveal">
-          <img src="assets/img/headshots/jbernstone179.jpg" alt="Jennifer Brown">
+          <img src="assets/img/headshots/jennifer-brown-portrait.jpg" alt="Jennifer Brown">
         </div>
         <div class="reveal">
           <p class="eyebrow">A little about me</p>
@@ -299,17 +305,17 @@ BIO = page_head("About", "Meet Jennifer", "Performer, teacher and coach with a v
 
           <p>Jennifer's interest in singing began very early. She humorously claims her desire to sing prompted her to learn to read. &ldquo;I wanted to sing the hymns in church, but not knowing the words made that difficult.&rdquo; Throughout grade school and high school she sang in choirs, played many leading roles in the school plays and performed with Celebration Iowa, a touring production cast with the &lsquo;cream of the crop&rsquo; of Iowa's musically gifted teenagers.</p>
 
-          <p>Her desire to perform was enhanced by attending Luther College on a vocal scholarship. Initially she chose to major in pre-medicine, but this denial of her true talents only added flame to the fire once she switched to earn a theater-dance degree. Jennifer graduated and went on to dance with Co'Motion Dance Company for two years before moving to NYC. The past twenty years she has traveled all over the country performing regionally, nationally and on international cruise ship productions of plays, musicals, films and her one-woman musical cabarets.</p>
+          <p>Her desire to perform was enhanced by attending Luther College on a vocal scholarship. Initially she chose to major in pre-medicine, but this denial of her true talents only added flame to the fire once she switched to earn a theater-dance degree. Jennifer graduated and went on to dance with Co'Motion Dance Company before moving to NYC. For twenty years she traveled all over the country performing regionally, nationally and on international cruise ship productions of plays, musicals, films and her one-woman musical cabarets.</p>
 
-          <p>In addition to her love of the stage, Jennifer enjoys journaling, baking, hiking, watching Lawrence Welk re-runs and catching fireflies with her nephew.</p>
+          <p>In addition to her love of the stage, Jennifer enjoys writing, reading, hiking, watching Lawrence Welk re-runs and catching fireflies with her daughter &amp; husband.</p>
 
           <h3>On stage</h3>
           <p>With a voice and a stage presence that has captivated audiences across the country, Jennifer's soprano voice has been hailed as the voice of a nightingale and heard in such roles as Guenevere (<em>Camelot</em>), Johanna (<em>Sweeney Todd</em>), Grace (<em>Annie</em>) and Liesl (<em>The Sound of Music</em>) &mdash; on stages in 46 of the 50 states.</p>
 
           <h3>In the classroom</h3>
-          <p>Jennifer has taught, guest lectured and been an artist-in-residence for all age levels (3 years old through college) in 45-minute class periods, single-afternoon programs, after-school programs and full-time one- and two-week workshops. She began teaching while still in college through a series of classes entitled &ldquo;Artists in the Schools.&rdquo; Since then she has participated in residencies through the Co-Motion Dance Company, taught for the New York City Parks and Recreation Department, and led Q&amp;As on a wide variety of creative performance projects over the past 20 years.</p>
+          <p>Jennifer has taught, guest-lectured and been an artist-in-residence and fitness-coach-in-residence for all ages (3&ndash;100) utilizing 45-minute workshops, single-afternoon programs, weekend programs, evening programs and one- to six-week workshops.</p>
 
-          <p>Her desire to share her knowledge, skills and gifts with students is a deep-rooted one that began in 1991 when she was cast for the first time as a performer with Celebration Iowa &mdash; and was subsequently hired as a performing and teaching staff member. Jennifer currently resides just north of Rome, NY, where she teaches voice, piano and acting privately in her studio and classes at a variety of venues such as the Rome Art and Community Center and the YMCA.</p>
+          <p>Jennifer currently resides just north of Rome, NY, where she teaches voice, piano, ballet and acting privately in her studio and coaches individuals wishing to create a healthier body and mind.</p>
         </div>
         <aside class="reveal">
           <div class="card">
@@ -561,6 +567,39 @@ LESSONS_WORKSHOPS = page_head("Teaching · Group", "Workshops &amp; Seminars",
 """ + cta_band()
 
 
+# ===================== TEACHING: BALLET =====================
+LESSONS_BALLET = page_head("Teaching · Ballet", "Ballet Lessons",
+    "Private ballet instruction for children and adults &mdash; from first positions to refining your technique.",
+    ['<a href="index.html">Home</a>', 'Teaching', 'Ballet']) + """
+    <section class="section">
+      <div class="container grid grid--sidebar">
+        <div class="prose reveal">
+          <p>Trained in ballet and a retired professional dancer, Jennifer brings a lifetime of movement to private ballet lessons for children and adults. Whether your little one dreams of their first <em>plié</em>, you're an adult who always wanted to try, or you're a dancer looking to polish technique, lessons meet you exactly where you are.</p>
+          <p>We build a strong foundation &mdash; posture, alignment, barre work, port de bras and musicality &mdash; in a way that is structured but genuinely joyful. As with all of Jennifer's teaching, the goal is for you to grow into your own confident dancer, not to need your teacher forever.</p>
+          <p>Lessons are tailored to age and level. For younger dancers, creative movement keeps things playful while building real skills; for teens and adults, we focus on technique, strength and grace. Homework (yes, ballet has homework!) is assigned so you get the most from each session.</p>
+          <p>I teach on weekends as well as weekdays, with a strict 24-hour cancellation policy that applies to me too. :)</p>
+          <p class="signoff">&mdash; Jennifer</p>
+        </div>
+        <aside class="reveal">
+          <div class="card">
+            <h3>Lessons &amp; rates</h3>
+            <p style="color:var(--muted)">Ballet lessons are offered privately, 30 or 60 minutes, for all ages. Reach out for current availability and rates &mdash; and to find the right fit for you or your dancer.</p>
+            <a class="btn btn--sm" href="contact.html" style="margin-top:.6rem">Book a ballet lesson</a>
+          </div>
+          <div class="card" style="margin-top:1.2rem">
+            <h3>Good to know</h3>
+            <ul class="prose" style="margin-top:.5rem">
+              <li>Children &amp; adults welcome</li>
+              <li>Absolute beginners encouraged</li>
+              <li>In person near Rome, NY</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+""" + cta_band()
+
+
 # ===================== FITNESS: PERSONAL TRAINING =====================
 PERSONAL_TRAINING = page_head("Fitness · Training", "Personal Training &amp; Sports Nutrition",
     "Certified, in-home one-on-one training that fits your goals, your space and your budget.",
@@ -622,96 +661,77 @@ PERSONAL_TRAINING = page_head("Fitness · Training", "Personal Training &amp; Sp
 """
 
 
-# ===================== FITNESS: ZUMBA =====================
-ZUMBA = page_head("Fitness · Dance", "Zumba &amp; Parent &amp; Me Zumba",
-    "Latin-inspired dance fitness for every level. Zero judgment. 100% fun.",
-    ['<a href="index.html">Home</a>', 'Fitness', 'Zumba']) + """
+# ===================== FITNESS: NUTRITION =====================
+NUTRITION = page_head("Fitness &amp; Wellness · Nutrition", "Sports &amp; Lifestyle Nutrition",
+    "Sustainable, judgment-free nutrition coaching &mdash; small tweaks that become a lifestyle, in person and online.",
+    ['<a href="index.html">Home</a>', 'Fitness', 'Nutrition']) + """
     <section class="section">
       <div class="container grid grid--sidebar">
         <div class="prose reveal">
-          <p class="lead">All fitness levels welcome &mdash; zero judgment, 100% fun!</p>
-          <h3>Zumba</h3>
-          <ul class="facts">
-            <li><span class="k">When</span> Tuesdays &amp; Thursdays at 5:45pm</li>
-            <li><span class="k">Where</span> St. John's Gymnasium, 502 W Chestnut Street, Rome, NY</li>
-            <li><span class="k">Fee</span> $80 per session (16 classes) or $8 drop-in</li>
+          <p>Wherever you are today in your nutrition journey is where you are. It's not bad or good; it simply is &mdash; and it can always be improved upon. As a certified Sports Nutritionist, I won't hand you an overhaul or a fad. Instead, we find realistic places to tweak, one habit at a time, until eating well stops feeling like a project and starts feeling like <em>you</em>.</p>
+          <p>As overused as the term is, we want to create a genuine lifestyle change: I want it to feel <em>off</em> for your body when you go too long without nourishing it well, and to notice the difference when you do. I have my own demons too &mdash; I'm honest that sugar is mine &mdash; so this is a partnership, not a lecture.</p>
+          <h3>What we might work on together</h3>
+          <ul>
+            <li>Fueling your training, energy and recovery</li>
+            <li>Building simple, repeatable meals you actually enjoy</li>
+            <li>Untangling emotional and habit-based eating</li>
+            <li>Pairing nutrition with a movement plan for steady, lasting results</li>
           </ul>
-          <p>Latin-inspired, fun dance music with moves that are easy to learn! Dance off anywhere from 300&ndash;500 calories per class. The last 15 minutes include weight training &mdash; please bring a set of weights.</p>
-
-          <h3>Parent &amp; Me Zumba</h3>
-          <p>(Or grandparent, aunt, uncle, babysitter, or&hellip;)</p>
-          <ul class="facts">
-            <li><span class="k">When</span> Wednesdays &amp; Fridays at 9:30am</li>
-            <li><span class="k">Where</span> St. John's Gymnasium, 502 W Chestnut Street, Rome, NY</li>
-            <li><span class="k">Fee</span> $40 per session (8 classes) or $8 drop-in</li>
-          </ul>
-          <p>Zumba is super fun for all ages &mdash; I'm amazed at how quickly the younger ones pick it up! Come share good laughs with your loved one while getting great exercise. Class is open to all ages.</p>
-          <p class="note">This class runs based on interest. If you'd like it on the schedule, just <a href="contact.html">contact Jennifer</a> &mdash; she's more than willing to add it.</p>
-
-          <h3>What is Zumba?</h3>
-          <p>When participants see a Zumba class in action, they can't wait to give it a try. Classes feature exotic rhythms set to high-energy Latin and international beats. Before participants know it, they're getting fit and their energy levels are soaring. It's easy to do, effective and totally exhilarating &mdash; often building a deep-rooted community among returning students.</p>
+          <p>Coaching is available one-on-one, in person near Rome, NY or online &mdash; and pairs naturally with <a href="personal-training.html">personal training</a>.</p>
         </div>
         <aside class="reveal">
           <div class="card">
-            <h3>This class is for you if&hellip;</h3>
-            <ul class="prose" style="margin-top:.5rem">
-              <li>You're worried you &ldquo;won't get the moves.&rdquo;</li>
-              <li>You're sure you &ldquo;won't get a real workout.&rdquo;</li>
-              <li>You have not two, but three left feet.</li>
-            </ul>
+            <h3>Work with Jennifer</h3>
+            <p style="color:var(--muted)">Every body and goal is different, so nutrition coaching is tailored to you. Reach out and we'll find the right starting point &mdash; and current rates.</p>
+            <a class="btn btn--sm" href="contact.html" style="margin-top:.6rem">Start a conversation</a>
           </div>
           <div class="card" style="margin-top:1.2rem">
-            <h3>About me</h3>
+            <h3>Credentials</h3>
             <ul class="prose" style="margin-top:.5rem">
-              <li>Certified Personal Trainer &amp; Sports Nutritionist</li>
-              <li>Retired professional modern dancer</li>
-              <li>NYC actress, singer &amp; choreographer</li>
-              <li>I <em>love</em> to teach!</li>
+              <li>Certified Personal Trainer</li>
+              <li>Certified Sports Nutritionist</li>
+              <li>20+ years coaching all ages</li>
             </ul>
           </div>
-          <a class="btn" href="contact.html" style="margin-top:1.2rem">Ask about the schedule</a>
         </aside>
       </div>
     </section>
-"""
+""" + cta_band()
 
 
-# ===================== FITNESS: OTHER CLASSES =====================
-FITNESS_CLASSES = page_head("Fitness · Classes", "Pilates, Indoor Walking &amp; Weights",
-    "Approachable group classes for strength, posture and steady weight loss &mdash; very fun, very social.",
-    ['<a href="index.html">Home</a>', 'Fitness', 'Other Classes']) + """
+# ===================== FITNESS: AGE WELL & VIBRANTLY =====================
+AGE_WELL = page_head("Fitness &amp; Wellness · Healthy Aging", "Age Well &amp; Vibrantly",
+    "Strength, balance, mobility and confidence for every stage of life &mdash; gentle, encouraging and built around you.",
+    ['<a href="index.html">Home</a>', 'Fitness', 'Age Well &amp; Vibrantly']) + """
     <section class="section">
-      <div class="container">
-        <div class="grid grid--3">
-          <div class="card reveal">
-            <h3>Pilates</h3>
-            <ul class="facts">
-              <li><span class="k">When</span> Mon &amp; Wed, 4:30&ndash;5:00pm</li>
-              <li><span class="k">Where</span> St. John's Gymnasium, Rome, NY</li>
-              <li><span class="k">Fee</span> $40 / session or $5 drop-in</li>
-            </ul>
-            <p>Strengthen and stretch the abdomen and torso using only the body. Amazing results for anyone with a bad back, flabby tummy or poor posture. Please bring a mat.</p>
-          </div>
-          <div class="card reveal">
-            <h3>Indoor Walking</h3>
-            <ul class="facts">
-              <li><span class="k">When</span> Mon &amp; Wed, 5:00pm</li>
-              <li><span class="k">Where</span> St. John's Gymnasium, Rome, NY</li>
-              <li><span class="k">Fee</span> $80 / session or $8 drop-in</li>
-            </ul>
-            <p>Geared for anyone wanting to drop 20+ lbs. If exercise is <em>not</em> your forte, this is definitely for you &mdash; very fun and very social! As long as you can walk in place, you can do this class.</p>
-          </div>
-          <div class="card reveal">
-            <h3>Weight Training</h3>
-            <ul class="facts">
-              <li><span class="k">When</span> Tue &amp; Thu, last 15 min of Zumba</li>
-              <li><span class="k">Where</span> St. John's Gym, 502 W Chestnut St, Rome</li>
-              <li><span class="k">Bring</span> 3- or 5-lb dumbbells</li>
-            </ul>
-            <p>Built into the final stretch of each Zumba class. Filled water bottles work too. Unsure what to bring? Just ask &mdash; don't hesitate to contact Jennifer.</p>
-          </div>
+      <div class="container grid grid--sidebar">
+        <div class="prose reveal">
+          <p class="lead">Vibrant living isn't about turning back the clock &mdash; it's about feeling strong, steady and capable in the body you have today.</p>
+          <p>I coach individuals who want to create a healthier body <em>and</em> mind, with a special love for helping people stay active and independent as they age. Wherever you're starting from, we meet your body exactly where it is and build from there &mdash; no judgment, no comparison, just steady, encouraging progress.</p>
+          <h3>What we focus on</h3>
+          <ul>
+            <li><strong>Strength</strong> &mdash; protect bone and muscle so daily life stays easy</li>
+            <li><strong>Balance &amp; stability</strong> &mdash; move with confidence and reduce the risk of falls</li>
+            <li><strong>Mobility &amp; posture</strong> &mdash; keep joints supple and stand tall</li>
+            <li><strong>Energy &amp; mood</strong> &mdash; gentle, consistent movement that lifts the whole day</li>
+          </ul>
+          <p>Sessions are one-on-one and fully adaptable &mdash; available in person near Rome, NY or online, so you can work with me from anywhere. It pairs beautifully with <a href="nutrition.html">nutrition coaching</a> for a whole-person approach.</p>
         </div>
-        <p class="note reveal" style="margin-top:1.6rem">Class times and sessions run year-round in rotating 8-week blocks. <a href="contact.html">Contact Jennifer</a> for the current schedule and to reserve your spot.</p>
+        <aside class="reveal">
+          <div class="card">
+            <h3>For all ages (3&ndash;100)</h3>
+            <p style="color:var(--muted)">Every plan is personal. Tell me a little about your goals and any concerns, and we'll design something that fits your life &mdash; and I'll share current rates.</p>
+            <a class="btn btn--sm" href="contact.html" style="margin-top:.6rem">Let's talk</a>
+          </div>
+          <div class="card" style="margin-top:1.2rem">
+            <h3>Why work with me</h3>
+            <ul class="prose" style="margin-top:.5rem">
+              <li>Certified Personal Trainer &amp; Sports Nutritionist</li>
+              <li>Retired professional dancer</li>
+              <li>Patient, encouraging, judgment-free</li>
+            </ul>
+          </div>
+        </aside>
       </div>
     </section>
 """ + cta_band()
@@ -1064,9 +1084,9 @@ MEDIA = page_head("Performing · Media", "Media &amp; Press",
 
 
 # ===================== CONTACT =====================
-CONTACT = page_head("Get in touch", "Contact &amp; Studio Locations",
-    "Questions about lessons, classes, or a performance booking? Send a note &mdash; Jennifer will get right back to you.",
-    ['<a href="index.html">Home</a>', 'Contact']) + """
+CONTACT = page_head("Get in touch", "Contact &amp; Studio Location",
+    "Questions about lessons, coaching, or a performance booking? Send a note &mdash; Jennifer will get right back to you.",
+    ['<a href="index.html">Home</a>', 'Contact']) + f"""
     <section class="section">
       <div class="container contact-grid">
         <div class="reveal">
@@ -1082,9 +1102,9 @@ CONTACT = page_head("Get in touch", "Contact &amp; Studio Locations",
             <div class="field">
               <label for="subject">I'm interested in</label>
               <select id="subject" name="subject">
-                <option>Voice / piano / acting lessons</option>
-                <option>Fitness training or classes</option>
-                <option>Booking a performance</option>
+                <option>Voice / piano / acting / ballet lessons</option>
+                <option>Personal training, nutrition or healthy aging</option>
+                <option>Booking a performance, emcee or speaker</option>
                 <option>Workshops &amp; seminars</option>
                 <option>Something else</option>
               </select>
@@ -1094,26 +1114,22 @@ CONTACT = page_head("Get in touch", "Contact &amp; Studio Locations",
               <textarea id="message" name="message" required></textarea>
             </div>
             <button class="btn" type="submit">Send message</button>
-            <p class="form-note" id="form-status">This form opens your email app. Prefer to write directly? Email <a href="mailto:jennifer@jenniferbrown.xyz">jennifer@jenniferbrown.xyz</a>.</p>
+            <p class="form-note" id="form-status">This form opens your email app. Prefer to write directly? Email <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
           </form>
         </div>
         <aside class="reveal">
           <div class="card" style="margin-bottom:1.4rem">
             <h3>Reach Jennifer</h3>
             <ul class="contact-info">
-              <li><span class="ico">&#9742;</span><div><strong>Phone</strong><br><a href="tel:+16465268312">646-526-8312</a></div></li>
-              <li><span class="ico">&#9993;</span><div><strong>Email</strong><br><a href="mailto:jennifer@jenniferbrown.xyz">jennifer@jenniferbrown.xyz</a></div></li>
-              <li><span class="ico">&#9826;</span><div><strong>Facebook</strong><br><a href="https://www.facebook.com/" target="_blank" rel="noopener">Music &amp; Wellness Studio</a></div></li>
+              <li><span class="ico">&#9742;</span><div><strong>Phone</strong><br><a href="tel:+16465268312">{PHONE}</a></div></li>
+              <li><span class="ico">&#9993;</span><div><strong>Email</strong><br><a href="mailto:{EMAIL}">{EMAIL}</a></div></li>
+              <li><span class="ico">&#9826;</span><div><strong>Facebook</strong><br><a href="{FACEBOOK}" target="_blank" rel="noopener">Jennifer Brown</a></div></li>
+              <li><span class="ico">&#9826;</span><div><strong>Instagram</strong><br><a href="{INSTAGRAM}" target="_blank" rel="noopener">{INSTAGRAM_HANDLE}</a></div></li>
             </ul>
           </div>
-          <div class="card" style="margin-bottom:1.4rem">
-            <h3>Studio &mdash; Rome, NY</h3>
-            <p>A bright, welcoming studio very near Route 26 and Stokes Road. Please contact Jennifer for the specific address.</p>
-          </div>
           <div class="card">
-            <h3>Group classes</h3>
-            <p>Gymnasium at St. John's Lutheran Church<br>502 W Chestnut Street, Rome, NY</p>
-            <p style="font-size:.92rem;color:var(--muted)">From the parking lot, look for the large sign over the door that reads &ldquo;GYMNASIUM.&rdquo;</p>
+            <h3>Studio &mdash; Rome, NY</h3>
+            <p>A bright, welcoming studio very near Route 26 and Stokes Road. Please contact Jennifer for the specific address. Lessons and coaching are also available online.</p>
           </div>
         </aside>
       </div>
@@ -1132,9 +1148,10 @@ if __name__ == "__main__":
     page("lessons-singing.html", "Singing Lessons", "Private voice lessons for all ages and abilities with Jennifer Brown in Rome, NY.", LESSONS_SINGING, "teaching")
     page("lessons-piano.html", "Piano Lessons", "Private piano lessons, one-on-one or with a friend, for children and adults.", LESSONS_PIANO, "teaching")
     page("lessons-acting.html", "Acting Lessons", "Year-round private acting coaching — auditions, scene study, on-camera and more.", LESSONS_ACTING, "teaching")
+    page("lessons-ballet.html", "Ballet Lessons", "Private ballet lessons for children and adults with retired professional dancer Jennifer Brown in Rome, NY.", LESSONS_BALLET, "teaching")
     page("lessons-workshops.html", "Workshops & Seminars", "Second Saturdays group workshops for acting and singing, plus the Business of the Business seminar.", LESSONS_WORKSHOPS, "teaching")
     page("personal-training.html", "Personal Training", "Certified in-home personal training and sports nutrition tailored to your goals.", PERSONAL_TRAINING, "fitness")
-    page("zumba.html", "Zumba", "Latin-inspired Zumba dance fitness for all levels in Rome, NY — zero judgment, 100% fun.", ZUMBA, "fitness")
-    page("fitness-classes.html", "Fitness Classes", "Pilates, indoor walking and weight training group classes in Rome, NY.", FITNESS_CLASSES, "fitness")
-    page("contact.html", "Contact", "Contact Jennifer Brown about lessons, fitness classes or performance bookings in Rome, NY.", CONTACT, "contact")
+    page("nutrition.html", "Nutrition", "Judgment-free sports and lifestyle nutrition coaching with Jennifer Brown — in person in Rome, NY or online.", NUTRITION, "fitness")
+    page("age-well.html", "Age Well & Vibrantly", "Strength, balance and mobility coaching for healthy, vibrant aging — all ages, in person or online.", AGE_WELL, "fitness")
+    page("contact.html", "Contact", "Contact Jennifer Brown about lessons, coaching or performance bookings in Rome, NY.", CONTACT, "contact")
     print("\nDone — 14 pages generated.")
