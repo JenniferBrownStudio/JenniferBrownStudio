@@ -136,7 +136,7 @@ def page(filename, title, description, body, active, hero=False):
             <li><a href="tel:+16465268312">{PHONE}</a></li>
             <li><a href="mailto:{EMAIL}">{EMAIL}</a></li>
             <li>{LOCATION}</li>
-            <li><a href="contact.html">Contact &amp; locations →</a></li>
+            <li><a href="contact.html">Contact &amp; location →</a></li>
           </ul>
         </div>
       </div>
