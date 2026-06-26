@@ -643,19 +643,6 @@ PERSONAL_TRAINING = page_head("Fitness · Training", "Personal Training",
         </aside>
       </div>
     </section>
-
-    <section class="section section--cream2 section--tight">
-      <div class="container">
-        <h3 style="margin-bottom:1rem">Guidelines for client &amp; trainer</h3>
-        <ul class="prose" style="columns:2;column-gap:2rem">
-          <li>24-hour advance notice is required to cancel a session, otherwise 100% of the session is charged.</li>
-          <li>Homework and workout assignments are to be followed to the best of your ability.</li>
-          <li>Being ready means proper footwear, clothing, a clean space, and no children or pets in the workout area.</li>
-          <li>For male clients, another adult needs to be in the home during our session.</li>
-        </ul>
-        <p class="signoff prose">&mdash; Jennifer</p>
-      </div>
-    </section>
 """
 
 
