@@ -458,23 +458,24 @@ LESSONS_ACTING = page_head("Teaching · Acting", "Acting Lessons",
         </div>
         <aside class="reveal">
           <div class="rate">
-            <h4>60-minute lesson</h4>
+            <h4>45-minute lesson</h4>
             <ul>
-              <li>First lesson <span class="price">$30</span></li>
-              <li>Single lesson <span class="price">$40</span></li>
-              <li>5 lessons <span class="price">$175 <small>/ 6 wks</small></span></li>
-              <li>10 lessons <span class="price">$300 <small>/ 12 wks</small></span></li>
+              <li>First lesson <span class="price">$40</span></li>
+              <li>Single lesson <span class="price">$55</span></li>
+              <li>5 lessons <span class="price">$250 <small>/ 6 wks</small></span></li>
+              <li>10 lessons <span class="price">$400 <small>/ 12 wks</small></span></li>
             </ul>
           </div>
           <div class="rate" style="margin-top:1rem">
             <h4>30-minute lesson</h4>
             <ul>
-              <li>First lesson <span class="price">$18</span></li>
-              <li>Single lesson <span class="price">$25</span></li>
-              <li>5 lessons <span class="price">$110 <small>/ 6 wks</small></span></li>
-              <li>10 lessons <span class="price">$200 <small>/ 12 wks</small></span></li>
+              <li>First lesson <span class="price">$30</span></li>
+              <li>Single lesson <span class="price">$40</span></li>
+              <li>5 lessons <span class="price">$180 <small>/ 6 wks</small></span></li>
+              <li>10 lessons <span class="price">$300 <small>/ 12 wks</small></span></li>
             </ul>
           </div>
+          <p class="note" style="margin-top:1rem">As always, a 24-hour cancellation notice is required, otherwise, the lesson will be forfeit.<br>This applies to me as well. &#128522;<br>A package of 5 lessons expires in 6 weeks.<br>A package of 10 lessons expires in 12 weeks.</p>
           <a class="btn" href="contact.html" style="margin-top:1rem">Book an acting lesson</a>
         </aside>
       </div>
