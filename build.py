@@ -600,7 +600,7 @@ LESSONS_BALLET = page_head("Teaching · Ballet", "Ballet Lessons",
 
 # ===================== FITNESS: PERSONAL TRAINING =====================
 PERSONAL_TRAINING = page_head("Fitness · Training", "Personal Training &amp; Sports Nutrition",
-    "Certified, in-home one-on-one training that fits your goals, your space and your budget.",
+    "Virtual or in-person, 1-on-1 training that fits your goals, your space and your budget.",
     ['<a href="index.html">Home</a>', 'Fitness', 'Personal Training']) + """
     <section class="section">
       <div class="container grid grid--sidebar">
