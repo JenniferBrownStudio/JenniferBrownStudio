@@ -704,16 +704,18 @@ AGE_WELL = page_head("Fitness &amp; Wellness · Healthy Aging", "Age Well &amp; 
     <section class="section">
       <div class="container grid grid--sidebar">
         <div class="prose reveal">
-          <p class="lead">Vibrant living isn't about turning back the clock &mdash; it's about feeling strong, steady and capable in the body you have today.</p>
-          <p>I coach individuals who want to create a healthier body <em>and</em> mind, with a special love for helping people stay active and independent as they age. Wherever you're starting from, we meet your body exactly where it is and build from there &mdash; no judgment, no comparison, just steady, encouraging progress.</p>
-          <h3>What we focus on</h3>
+          <p class="lead">Goal is NOT to be skinny (but no one ever said &lsquo;no&rsquo; to less fat).</p>
+          <p>Goal IS to be in our 80s and:</p>
           <ul>
-            <li><strong>Strength</strong> &mdash; protect bone and muscle so daily life stays easy</li>
-            <li><strong>Balance &amp; stability</strong> &mdash; move with confidence and reduce the risk of falls</li>
-            <li><strong>Mobility &amp; posture</strong> &mdash; keep joints supple and stand tall</li>
-            <li><strong>Energy &amp; mood</strong> &mdash; gentle, consistent movement that lifts the whole day</li>
+            <li>doing our own grocery shopping</li>
+            <li>living independently</li>
+            <li>having FUN w/ family</li>
+            <li>not being a burden to our family</li>
+            <li>walking and hiking with ease</li>
+            <li>no medicines</li>
           </ul>
-          <p>Sessions are one-on-one and fully adaptable &mdash; available in person near Rome, NY or online, so you can work with me from anywhere. It pairs beautifully with <a href="nutrition.html">nutrition coaching</a> for a whole-person approach.</p>
+          <p>And in the meantime, learning daily behaviors and habits that are easily stackable, so that we live better NOW and stronger later.</p>
+          <p style="font-weight:700">This is a behavioral program for a lifestyle, not a diet.</p>
         </div>
         <aside class="reveal">
           <div class="card">
