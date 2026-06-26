@@ -249,7 +249,7 @@ HOME = """    <section class="hero">
             <div class="pillar__img" style="background-image:url('assets/img/portfolio/fitness/yoga2.jpg')"></div>
             <div class="pillar__body">
               <h3>Fitness &amp; Wellness</h3>
-              <p class="pillar__lead">Certified personal training, sports nutrition and vibrant healthy-aging &mdash; in person and online.</p>
+              <p class="pillar__lead">Personal training, nutrition coaching and vibrant healthy-aging &mdash; in person and online.</p>
               <ul class="pillar__links">
                 <li><a href="personal-training.html">Personal Training</a></li>
                 <li><a href="nutrition.html">Nutrition</a></li>
