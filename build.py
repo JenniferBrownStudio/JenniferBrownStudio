@@ -660,22 +660,30 @@ PERSONAL_TRAINING = page_head("Fitness · Training", "Personal Training &amp; Sp
 
 
 # ===================== FITNESS: NUTRITION =====================
-NUTRITION = page_head("Fitness &amp; Wellness · Nutrition", "Sports &amp; Lifestyle Nutrition",
-    "Sustainable, judgment-free nutrition coaching &mdash; small tweaks that become a lifestyle, in person and online.",
-    ['<a href="index.html">Home</a>', 'Fitness', 'Nutrition']) + """
+NUTRITION = page_head("Fitness &amp; Wellness · Nutrition", "Behavioral Nutrition",
+    "Sustainable, grace-filled nutrition coaching.",
+    ['<a href="index.html">Home</a>', 'Fitness', 'Behavioral Nutrition']) + """
     <section class="section">
       <div class="container grid grid--sidebar">
         <div class="prose reveal">
-          <p>Wherever you are today in your nutrition journey is where you are. It's not bad or good; it simply is &mdash; and it can always be improved upon. As a certified Sports Nutritionist, I won't hand you an overhaul or a fad. Instead, we find realistic places to tweak, one habit at a time, until eating well stops feeling like a project and starts feeling like <em>you</em>.</p>
-          <p>As overused as the term is, we want to create a genuine lifestyle change: I want it to feel <em>off</em> for your body when you go too long without nourishing it well, and to notice the difference when you do. I have my own demons too &mdash; I'm honest that sugar is mine &mdash; so this is a partnership, not a lecture.</p>
-          <h3>What we might work on together</h3>
+          <p>Wherever you are today in your nutrition journey is where you are. It's not bad or good; it simply is &mdash; and it can always be improved upon. As your nutrition coach, I won't hand you an overhaul or a fad. Instead, we find realistic places to tweak, one habit at a time, until eating well stops feeling like a project and starts feeling like <em>you</em>.</p>
+          <p>The goal is to create behaviors for a lifestyle, not a diet.</p>
+          <p>This is where science meets simplicity, and where you learn how to truly nourish your body and mind.</p>
+          <p>Here&rsquo;s what you&rsquo;ll discover:</p>
           <ul>
-            <li>Fueling your training, energy and recovery</li>
-            <li>Building simple, repeatable meals you actually enjoy</li>
-            <li>Untangling emotional and habit-based eating</li>
-            <li>Pairing nutrition with a movement plan for steady, lasting results</li>
+            <li><strong>The power of protein:</strong> when to eat it and how it fuels your metabolism.</li>
+            <li><strong>True portion size:</strong> what balance really looks like on your plate.</li>
+            <li><strong>Smart supplementation:</strong> why adding the right support matters.</li>
+            <li><strong>Gut health non-negotiables:</strong> the 3 daily essentials for lasting wellness.</li>
+            <li><strong>Low-glycemic grocery shopping:</strong> how to make confident choices that stabilize blood sugar.</li>
+            <li>7 healthy habits you&rsquo;ll repeat for life.</li>
+            <li><strong>Brain training:</strong> wash away old patterns and replace them with empowering thoughts and behaviors.</li>
           </ul>
-          <p>Coaching is available one-on-one, in person near Rome, NY or online &mdash; and pairs naturally with <a href="personal-training.html">personal training</a>.</p>
+          <p>And that&rsquo;s just the beginning.</p>
+          <p>You&rsquo;ll gain clarity and confidence as we celebrate progress, not perfection.</p>
+          <p>&#10024; I&rsquo;m here as your coach, ready to guide you step by step toward a lifestyle that feels sustainable, strong, and joyful.</p>
+          <p>By the way, I have my own demons too &mdash; so this is a partnership, not a lecture.</p>
+          <p class="signoff">&mdash; Jennifer</p>
         </div>
         <aside class="reveal">
           <div class="card">
@@ -1154,7 +1162,7 @@ if __name__ == "__main__":
     page("lessons-ballet.html", "Ballet Lessons", "Private ballet lessons for children and adults with retired professional dancer Jennifer Brown in Rome, NY.", LESSONS_BALLET, "teaching")
     page("lessons-workshops.html", "Workshops & Seminars", "Second Saturdays group workshops for acting and singing, plus the Business of the Business seminar.", LESSONS_WORKSHOPS, "teaching")
     page("personal-training.html", "Personal Training", "Certified in-home personal training and sports nutrition tailored to your goals.", PERSONAL_TRAINING, "fitness")
-    page("nutrition.html", "Nutrition", "Judgment-free sports and lifestyle nutrition coaching with Jennifer Brown — in person in Rome, NY or online.", NUTRITION, "fitness")
+    page("nutrition.html", "Behavioral Nutrition", "Sustainable, grace-filled nutrition coaching with Jennifer Brown — behavioral changes for a lifestyle, not a diet, in person in Rome, NY or online.", NUTRITION, "fitness")
     page("age-well.html", "Age Well & Vibrantly", "Strength, balance and mobility coaching for healthy, vibrant aging — all ages, in person or online.", AGE_WELL, "fitness")
     page("contact.html", "Contact", "Contact Jennifer Brown about lessons, coaching or performance bookings in Rome, NY.", CONTACT, "contact")
     print("\nDone — 14 pages generated.")
