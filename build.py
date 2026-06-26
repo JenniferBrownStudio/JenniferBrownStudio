@@ -557,10 +557,10 @@ LESSONS_BALLET = page_head("Teaching · Ballet", "Ballet Lessons",
     <section class="section">
       <div class="container grid grid--sidebar">
         <div class="prose reveal">
-          <p>Trained in ballet and a retired professional dancer, Jennifer brings a lifetime of movement to private ballet lessons for children and adults. Whether your little one dreams of their first <em>plié</em>, you're an adult who always wanted to try, or you're a dancer looking to polish technique, lessons meet you exactly where you are.</p>
-          <p>We build a strong foundation &mdash; posture, alignment, barre work, port de bras and musicality &mdash; in a way that is structured but genuinely joyful. As with all of Jennifer's teaching, the goal is for you to grow into your own confident dancer, not to need your teacher forever.</p>
+          <p>Trained in ballet and a retired professional dancer, I bring a lifetime of movement to private ballet lessons for children and adults. Whether your little one dreams of their first <em>plié</em>, you're an adult who always wanted to try, or you're a dancer looking to polish technique, lessons meet you exactly where you are.</p>
+          <p>We build a strong foundation &mdash; posture, alignment, barre work, port de bras and musicality &mdash; in a way that is structured but genuinely joyful. As with all of my teaching, the goal is for you to grow into your own confident dancer, not to need your teacher forever.</p>
           <p>Lessons are tailored to age and level. For younger dancers, creative movement keeps things playful while building real skills; for teens and adults, we focus on technique, strength and grace. Homework (yes, ballet has homework!) is assigned so you get the most from each session.</p>
-          <p>I teach on weekends as well as weekdays, with a strict 24-hour cancellation policy that applies to me too. :)</p>
+          <p>I teach on weekends as well as weekdays, with a strict 24-hour cancellation policy that applies to me too. Most lessons are 30 minutes. Students can increase to a 45-minute lesson based on focus, vocal maturity, and what would be most enjoyable for them.</p>
           <p class="signoff">&mdash; Jennifer</p>
         </div>
         <aside class="reveal">
