@@ -716,6 +716,20 @@ AGE_WELL = page_head("Fitness &amp; Wellness · Healthy Aging", "Age Well &amp; 
           </ul>
           <p>And in the meantime, learning daily behaviors and habits that are easily stackable, so that we live better NOW and stronger later.</p>
           <p style="font-weight:700">This is a behavioral program for a lifestyle, not a diet.</p>
+          <p>This is where science meets simplicity, and where you learn how to truly nourish your body and mind.</p>
+          <p>Here&rsquo;s what you&rsquo;ll discover&hellip;</p>
+          <ul>
+            <li><strong>The power of protein:</strong> when to eat it and how it fuels your metabolism.</li>
+            <li><strong>True portion size:</strong> what balance really looks like on your plate.</li>
+            <li><strong>Smart supplementation:</strong> why adding the right support matters.</li>
+            <li><strong>Gut health non-negotiables:</strong> the 3 daily essentials for lasting wellness.</li>
+            <li><strong>Low-glycemic grocery shopping:</strong> how to make confident choices that stabilize blood sugar.</li>
+            <li><strong>The 6-week plan:</strong> easy to follow, built around 7 healthy habits you&rsquo;ll repeat for life.</li>
+            <li><strong>Brain training:</strong> wash away old patterns and replace them with empowering thoughts and behaviors.</li>
+          </ul>
+          <p>And that&rsquo;s just the beginning.</p>
+          <p>You&rsquo;ll gain clarity, confidence, and a community that celebrates progress, not perfection.</p>
+          <p>&#10024; I&rsquo;m here as your coach, ready to guide you step by step toward a lifestyle that feels sustainable, strong, and joyful.</p>
         </div>
         <aside class="reveal">
           <div class="card">
