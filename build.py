@@ -428,7 +428,7 @@ LESSONS_PIANO = page_head("Teaching · Piano", "Piano Lessons",
 
 # ===================== TEACHING: ACTING =====================
 LESSONS_ACTING = page_head("Teaching · Acting", "Acting Lessons",
-    "Private, year-round coaching from a working actor of 30+ years &mdash; auditions, scenes, on-camera and more.",
+    "Private coaching from a working actor of 30+ years &mdash; auditions, scenes, on-camera and more.",
     ['<a href="index.html">Home</a>', 'Teaching', 'Acting']) + """
     <section class="section">
       <div class="container grid grid--sidebar">
@@ -441,8 +441,7 @@ LESSONS_ACTING = page_head("Teaching · Acting", "Acting Lessons",
               <cite>&mdash; parent of Peter C.</cite>
             </blockquote>
           </div>
-          <p>Have an audition coming up that you want to nail? Got a part in the school play or community theater and aren't sure what to do with it? Or do you simply love acting and you're preparing for college or a move to NYC? I've been in this crazy acting business for 20 years &mdash; wherever you are, I have been, and I'd really enjoy helping you.</p>
-          <p>I am accepting students for private instruction in:</p>
+          <p>Have an audition coming up that you want to nail? Got a part in the school play or community theater and aren't sure what to do with it? Or do you simply love acting and you're preparing for college or a move to NYC? I've been in this crazy acting business for 30+ years &mdash; wherever you are, I have been there too, and I'd really enjoy helping you.</p>
           <ul>
             <li>Monologues</li>
             <li>Scene study</li>
@@ -451,8 +450,9 @@ LESSONS_ACTING = page_head("Teaching · Acting", "Acting Lessons",
             <li>Improvisation</li>
             <li>Script analysis</li>
             <li>The business &amp; marketing of the business</li>
+            <li>Public Speaking</li>
           </ul>
-          <p>Lessons are structured but a lot of fun, with homework between sessions. Most lessons are 60 minutes; 30-minute lessons are available for children ages 6&ndash;12 and for adults on a tight budget or schedule. I teach weekends and weekdays with a strict 24-hour cancellation policy that applies to me too. :)</p>
+          <p>Lessons are structured but a lot of fun, with homework between sessions. I teach weekends and weekdays, with a strict 24-hour cancellation policy that applies to me too. Most lessons are 30 minutes. Students can increase to a 45-minute lesson based on focus, vocal maturity, and what would be most enjoyable for them.</p>
           <p class="note">Looking for a group setting? See <a href="lessons-workshops.html">Second Saturdays workshops</a> and the &ldquo;Business of the Business&rdquo; seminar.</p>
           <p class="signoff">&mdash; Jennifer</p>
         </div>
