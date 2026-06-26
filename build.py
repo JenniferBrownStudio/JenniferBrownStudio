@@ -353,12 +353,12 @@ LESSONS_SINGING = page_head("Teaching · Voice", "Singing Lessons",
         <aside class="reveal">
           <img src="assets/img/home/Kiersten-voice.jpg" alt="A student during a voice lesson" style="border-radius:12px;box-shadow:var(--shadow-md);margin-bottom:1.5rem">
           <div class="rate">
-            <h4>60-minute lesson</h4>
+            <h4>45-minute lesson</h4>
             <ul>
-              <li>First lesson <span class="price">$30</span></li>
-              <li>Single lesson <span class="price">$40</span></li>
-              <li>5 lessons <span class="price">$175 <small>/ 6 wks</small></span></li>
-              <li>10 lessons <span class="price">$300 <small>/ 12 wks</small></span></li>
+              <li>First lesson <span class="price">$40</span></li>
+              <li>Single lesson <span class="price">$55</span></li>
+              <li>5 lessons <span class="price">$250 <small>/ 6 wks</small></span></li>
+              <li>10 lessons <span class="price">$400 <small>/ 12 wks</small></span></li>
             </ul>
           </div>
           <div class="rate" style="margin-top:1rem">
