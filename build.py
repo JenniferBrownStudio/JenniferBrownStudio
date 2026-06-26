@@ -730,6 +730,10 @@ AGE_WELL = page_head("Fitness &amp; Wellness · Healthy Aging", "Age Well &amp; 
           <p>And that&rsquo;s just the beginning.</p>
           <p>You&rsquo;ll gain clarity, confidence, and a community that celebrates progress, not perfection.</p>
           <p>&#10024; I&rsquo;m here as your coach, ready to guide you step by step toward a lifestyle that feels sustainable, strong, and joyful.</p>
+          <div class="note" style="margin-top:1.6rem">
+            <p style="margin:0">Tell me a little about your goals and any concerns, because each of us is unique.</p>
+            <a class="btn btn--sm" href="contact.html" style="margin-top:.9rem">Let's Talk</a>
+          </div>
         </div>
       </div>
     </section>
