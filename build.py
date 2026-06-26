@@ -380,7 +380,7 @@ LESSONS_SINGING = page_head("Teaching · Voice", "Singing Lessons",
 
 # ===================== TEACHING: PIANO =====================
 LESSONS_PIANO = page_head("Teaching · Piano", "Piano Lessons",
-    "One-on-one or with a friend &mdash; for children and adults, beginner to intermediate.",
+    "For children and adults, beginner to intermediate.",
     ['<a href="index.html">Home</a>', 'Teaching', 'Piano']) + """
     <section class="section">
       <div class="container grid grid--sidebar">
