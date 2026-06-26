@@ -370,7 +370,7 @@ LESSONS_SINGING = page_head("Teaching · Voice", "Singing Lessons",
               <li>10 lessons <span class="price">$300 <small>/ 12 wks</small></span></li>
             </ul>
           </div>
-          <p class="note" style="margin-top:1rem">A 24-hour cancellation notice is required, otherwise, the lesson will be forfeit.<br>This applies to me as well. &#128522;<br>A package of 5 lessons expires in 6 weeks.<br>A package of 10 lessons expires in 12 weeks.</p>
+          <p class="note" style="margin-top:1rem">As always, a 24-hour cancellation notice is required, otherwise, the lesson will be forfeit.<br>This applies to me as well. &#128522;<br>A package of 5 lessons expires in 6 weeks.<br>A package of 10 lessons expires in 12 weeks.</p>
           <a class="btn" href="contact.html" style="margin-top:1rem">Book a voice lesson</a>
         </aside>
       </div>
@@ -401,42 +401,24 @@ LESSONS_PIANO = page_head("Teaching · Piano", "Piano Lessons",
         <aside class="reveal">
           <img src="assets/img/home/Kenzie-piano_copy.jpg" alt="A student at the piano" style="border-radius:12px;box-shadow:var(--shadow-md);margin-bottom:1.5rem">
           <div class="rate">
-            <h4>One-on-one · 60 min</h4>
+            <h4>45-minute lesson</h4>
+            <ul>
+              <li>First lesson <span class="price">$40</span></li>
+              <li>Single lesson <span class="price">$55</span></li>
+              <li>5 lessons <span class="price">$250 <small>/ 6 wks</small></span></li>
+              <li>10 lessons <span class="price">$400 <small>/ 12 wks</small></span></li>
+            </ul>
+          </div>
+          <div class="rate" style="margin-top:1rem">
+            <h4>30-minute lesson</h4>
             <ul>
               <li>First lesson <span class="price">$30</span></li>
-              <li>Single <span class="price">$40</span></li>
-              <li>5 lessons <span class="price">$175</span></li>
-              <li>10 lessons <span class="price">$300</span></li>
+              <li>Single lesson <span class="price">$40</span></li>
+              <li>5 lessons <span class="price">$180 <small>/ 6 wks</small></span></li>
+              <li>10 lessons <span class="price">$300 <small>/ 12 wks</small></span></li>
             </ul>
           </div>
-          <div class="rate" style="margin-top:1rem">
-            <h4>One-on-one · 30 min</h4>
-            <ul>
-              <li>First lesson <span class="price">$18</span></li>
-              <li>Single <span class="price">$25</span></li>
-              <li>5 lessons <span class="price">$110</span></li>
-              <li>10 lessons <span class="price">$200</span></li>
-            </ul>
-          </div>
-          <div class="rate" style="margin-top:1rem">
-            <h4>With a friend · 60 min</h4>
-            <ul>
-              <li>First lesson <span class="price">$44</span></li>
-              <li>Single <span class="price">$60</span></li>
-              <li>5 lessons <span class="price">$262</span></li>
-              <li>10 lessons <span class="price">$450</span></li>
-            </ul>
-          </div>
-          <div class="rate" style="margin-top:1rem">
-            <h4>With a friend · 30 min</h4>
-            <ul>
-              <li>First lesson <span class="price">$28</span></li>
-              <li>Single <span class="price">$38</span></li>
-              <li>5 lessons <span class="price">$166</span></li>
-              <li>10 lessons <span class="price">$300</span></li>
-            </ul>
-          </div>
-          <p class="note" style="margin-top:1rem">Multi-lesson packages expire 6 weeks (5-packs) or 12 weeks (10-packs) from date of purchase.</p>
+          <p class="note" style="margin-top:1rem">As always, a 24-hour cancellation notice is required, otherwise, the lesson will be forfeit.<br>This applies to me as well. &#128522;<br>A package of 5 lessons expires in 6 weeks.<br>A package of 10 lessons expires in 12 weeks.</p>
           <a class="btn" href="contact.html" style="margin-top:1rem">Book a piano lesson</a>
         </aside>
       </div>
