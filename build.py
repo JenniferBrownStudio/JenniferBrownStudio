@@ -605,21 +605,20 @@ PERSONAL_TRAINING = page_head("Fitness · Training", "Personal Training &amp; Sp
     <section class="section">
       <div class="container grid grid--sidebar">
         <div class="prose reveal">
-          <p>Need help kick-starting your &lsquo;get healthy&rsquo; resolution? I'm here to help. I'm a certified Personal Trainer and Sports Nutritionist. I teach a variety of fitness classes and train clients one-on-one &mdash; but I also know that many people don't have time to drive back and forth from a gym, and others would rather get a solid workout at home without paying for a membership. I'd like to support your financial choices and time limitations.</p>
-          <p>When I arrive at your home, I can bring hand weights, an exercise ball and the like &mdash; but I much prefer to use what you already have. Walls, floors and chairs make for incredible workouts! Together we create a daily routine you can do anytime, not just when we're together. If you have equipment at home, I'll help you learn to use it most effectively, and if your gym allows outside trainers, I'm happy to meet you there.</p>
           <h3>Goals you might have</h3>
           <ul style="columns:2;column-gap:1.6rem">
-            <li>Lose 15 lbs</li>
-            <li>Lose 50 lbs</li>
-            <li>Lose 125 lbs</li>
+            <li>Remove 10&ndash;100 lbs</li>
+            <li>Lower A1C</li>
             <li>Feel comfortable in a swimsuit</li>
-            <li>Go hiking with the family</li>
+            <li>Champion perimenopause</li>
             <li>Get off blood-pressure medicine</li>
             <li>Drop 2 dress sizes for a wedding</li>
-            <li>Gain 25 lbs &amp; muscle mass</li>
+            <li>Gain 20 lbs &amp; muscle mass</li>
           </ul>
           <h3>My belief system</h3>
-          <p>Wherever you are today in your fitness and nutrition journey is where you are. It's not bad or good; it simply is &mdash; and it can always be improved upon. Rather than an overhaul, we'll find places to tweak. As overused as the term is, we want to create a lifestyle change: I want it to feel <em>off</em> for your body to not move every single day, and to feel <em>off</em> when you eat too much sugar. I have my own demons too &mdash; I'm truly addicted to sugar &mdash; so I know what you're going through. I'm here to help you create a healthy addiction.</p>
+          <p>Wherever you are today in your fitness and nutrition journey is where you are. It's not bad or good; it simply is. Rather than an overhaul, we'll find places to tweak. As overused as the term is, we will create a lifestyle change: I want it to feel <em>off</em> for your body to not move every single day, and to feel <em>off</em> when you eat too much sugar or not enough protein or fiber. I have my own demons too &mdash; I'm truly addicted to sugar &mdash; so I know what you're going through. I'm here to help you create behavioral changes to achieve your goals.</p>
+          <p>Yes, we can meet in your home (additional travel fee) or a gym or outdoors at a park (that&rsquo;s always fun!). But most prefer to work together via Zoom or FaceTime simply due to time constraints. We can meet in your living room, kitchen, or office &mdash; anytime that works for your schedule. Not having to drive to a gym or pay for a gym membership is very helpful.</p>
+          <p>If you have equipment at home such as dumbbells, exercise ball, resistance bands, I'll help you learn how to use them most effectively. However, walls, floors and chairs make for incredible workouts! Together we will create a daily routine you can do anytime, not just when we're together.</p>
         </div>
         <aside class="reveal">
           <img src="assets/img/portfolio/fitness/wall.jpg" alt="Bodyweight wall workout" style="border-radius:12px;box-shadow:var(--shadow-md);margin-bottom:1.5rem">
@@ -639,6 +638,7 @@ PERSONAL_TRAINING = page_head("Fitness · Training", "Personal Training &amp; Sp
               <li>15 sessions <span class="price">$50 <small>ea ($750)</small></span></li>
             </ul>
           </div>
+          <p class="note" style="margin-top:1rem">Training is available one-on-one, in person near Rome, NY or online (Zoom or FaceTime) &mdash; and pairs naturally with <a href="nutrition.html">Nutrition Coaching</a>.</p>
           <a class="btn" href="contact.html" style="margin-top:1rem">Start training</a>
         </aside>
       </div>
