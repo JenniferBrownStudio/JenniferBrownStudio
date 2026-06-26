@@ -564,11 +564,26 @@ LESSONS_BALLET = page_head("Teaching · Ballet", "Ballet Lessons",
           <p class="signoff">&mdash; Jennifer</p>
         </div>
         <aside class="reveal">
-          <div class="card">
-            <h3>Lessons &amp; rates</h3>
-            <p style="color:var(--muted)">Ballet lessons are offered privately, 30 or 60 minutes, for all ages. Reach out for current availability and rates &mdash; and to find the right fit for you or your dancer.</p>
-            <a class="btn btn--sm" href="contact.html" style="margin-top:.6rem">Book a ballet lesson</a>
+          <div class="rate">
+            <h4>45-minute lesson</h4>
+            <ul>
+              <li>First lesson <span class="price">$40</span></li>
+              <li>Single lesson <span class="price">$55</span></li>
+              <li>5 lessons <span class="price">$250 <small>/ 6 wks</small></span></li>
+              <li>10 lessons <span class="price">$400 <small>/ 12 wks</small></span></li>
+            </ul>
           </div>
+          <div class="rate" style="margin-top:1rem">
+            <h4>30-minute lesson</h4>
+            <ul>
+              <li>First lesson <span class="price">$30</span></li>
+              <li>Single lesson <span class="price">$40</span></li>
+              <li>5 lessons <span class="price">$180 <small>/ 6 wks</small></span></li>
+              <li>10 lessons <span class="price">$300 <small>/ 12 wks</small></span></li>
+            </ul>
+          </div>
+          <p class="note" style="margin-top:1rem">As always, a 24-hour cancellation notice is required, otherwise, the lesson will be forfeit.<br>This applies to me as well. &#128522;<br>A package of 5 lessons expires in 6 weeks.<br>A package of 10 lessons expires in 12 weeks.</p>
+          <a class="btn" href="contact.html" style="margin-top:1rem">Book a ballet lesson</a>
           <div class="card" style="margin-top:1.2rem">
             <h3>Good to know</h3>
             <ul class="prose" style="margin-top:.5rem">
@@ -684,7 +699,7 @@ NUTRITION = page_head("Fitness &amp; Wellness · Nutrition", "Sports &amp; Lifes
 
 # ===================== FITNESS: AGE WELL & VIBRANTLY =====================
 AGE_WELL = page_head("Fitness &amp; Wellness · Healthy Aging", "Age Well &amp; Vibrantly",
-    "Strength, balance, mobility and confidence for every stage of life &mdash; gentle, encouraging and built around you.",
+    "A behavioral program for a lifestyle, not a diet.",
     ['<a href="index.html">Home</a>', 'Fitness', 'Age Well &amp; Vibrantly']) + """
     <section class="section">
       <div class="container grid grid--sidebar">
