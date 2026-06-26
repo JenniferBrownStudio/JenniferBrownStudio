@@ -364,13 +364,13 @@ LESSONS_SINGING = page_head("Teaching · Voice", "Singing Lessons",
           <div class="rate" style="margin-top:1rem">
             <h4>30-minute lesson</h4>
             <ul>
-              <li>First lesson <span class="price">$18</span></li>
-              <li>Single lesson <span class="price">$25</span></li>
-              <li>5 lessons <span class="price">$110 <small>/ 6 wks</small></span></li>
-              <li>10 lessons <span class="price">$200 <small>/ 12 wks</small></span></li>
+              <li>First lesson <span class="price">$30</span></li>
+              <li>Single lesson <span class="price">$40</span></li>
+              <li>5 lessons <span class="price">$180 <small>/ 6 wks</small></span></li>
+              <li>10 lessons <span class="price">$300 <small>/ 12 wks</small></span></li>
             </ul>
           </div>
-          <p class="note" style="margin-top:1rem">Lessons at your home incur a small additional fee. Please keep pets and other children away from the lesson space so the student gets the most out of their time.</p>
+          <p class="note" style="margin-top:1rem">A 24-hour cancellation notice is required, otherwise, the lesson will be forfeit.<br>This applies to me as well. &#128522;<br>A package of 5 lessons expires in 6 weeks.<br>A package of 10 lessons expires in 12 weeks.</p>
           <a class="btn" href="contact.html" style="margin-top:1rem">Book a voice lesson</a>
         </aside>
       </div>
