@@ -320,14 +320,7 @@ BIO = page_head("About", "Meet Jennifer", "Performer, teacher and coach with a v
         <aside class="reveal">
           <div class="card">
             <img src="assets/img/headshots/bio-denim.jpg" alt="Jennifer Brown" style="border-radius:10px;margin-bottom:1rem">
-            <h3>At a glance</h3>
-            <ul class="facts" style="margin-top:.6rem">
-              <li><span class="k">Voice</span> Soprano, 3+ octaves</li>
-              <li><span class="k">From</span> Carlisle, Iowa</li>
-              <li><span class="k">Trained</span> Luther College (BA, Theater/Dance)</li>
-              <li><span class="k">Based</span> Rome, New York</li>
-            </ul>
-            <a class="btn btn--sm" href="resume.html" style="margin-top:1rem">View full resume</a>
+            <a class="btn btn--sm" href="resume.html">View full resume</a>
           </div>
         </aside>
       </div>
