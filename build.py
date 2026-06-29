@@ -222,10 +222,10 @@ HOME = """    <section class="hero">
               <h3>Performing</h3>
               <p class="pillar__lead">Acting, singing and choreography honed on stages in 46 of the 50 states.</p>
               <ul class="pillar__links">
-                <li><a href="photos.html">Acting</a></li>
-                <li><a href="media.html">Singing</a></li>
-                <li><a href="resume.html">Choreography</a></li>
-                <li><a href="contact.html">Emcee/Speaker</a></li>
+                <li><a href="perform-acting.html">Acting</a></li>
+                <li><a href="perform-singing.html">Singing</a></li>
+                <li><a href="perform-choreography.html">Choreography</a></li>
+                <li><a href="perform-emcee.html">Emcee/Speaker</a></li>
               </ul>
               <a class="btn btn--sm" href="performances.html">Explore performing</a>
             </div>
@@ -1007,6 +1007,116 @@ PHOTOS = page_head("Performing · Photos", "Photo Gallery",
 """
 
 
+# ===================== PERFORMING: SINGING =====================
+PERFORM_SINGING = page_head("Performing · Singing", "Singing",
+    "Soprano with a 3+ octave range &mdash; a voice the press has called &ldquo;the voice of a nightingale.&rdquo;",
+    ['<a href="index.html">Home</a>', '<a href="performances.html">Performing</a>', 'Singing']) + """
+    <section class="section">
+      <div class="container grid grid--sidebar">
+        <div class="reveal">
+          <p class="lead">From cabaret and concert to musical theater and opera, Jennifer brings twenty years of professional stage experience to every performance. She has sung leading roles in regional theaters, on national tours and aboard cruise ships, and performs solo cabaret programs for concerts, benefits, churches and community events across the country.</p>
+          <p>Her solo album <em>&ldquo;Traveling This World&rdquo;</em> showcases the warmth and range that have earned praise from <em>The Des Moines Register</em>, <em>The Arizona Republic</em> and beyond.</p>
+          <div class="resume-tabs" style="margin-top:1.4rem">
+            <a class="btn btn--sm" href="resume.html">See full resume</a>
+            <a class="btn btn--sm btn--ghost" href="photos.html">Photo gallery</a>
+            <a class="btn btn--sm btn--ghost" href="media.html">Recordings &amp; press</a>
+          </div>
+        </div>
+        <aside class="reveal">
+          <div class="card">
+            <h3>Book Jennifer to sing</h3>
+            <p style="font-size:.95rem;color:var(--muted)">Concerts &middot; cabaret &middot; benefits &middot; church &amp; community events.</p>
+            <a class="btn btn--sm" href="contact.html" style="margin-top:.6rem">Check availability</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+""" + cta_band()
+
+
+# ===================== PERFORMING: ACTING =====================
+PERFORM_ACTING = page_head("Performing · Acting", "Acting",
+    "Stage, film and commercial work spanning 30+ years and stages in 46 of the 50 states.",
+    ['<a href="index.html">Home</a>', '<a href="performances.html">Performing</a>', 'Acting']) + """
+    <section class="section">
+      <div class="container grid grid--sidebar">
+        <div class="reveal">
+          <p class="lead">Jennifer has played leading roles in regional and New York theater, film and national commercials &mdash; from Johanna in <em>Sweeney Todd</em> and Grace Farrell in <em>Annie</em> to lead and supporting roles in independent film. Trained at Luther College and New York's Creative Acting Studio, she is equally at home on camera and on stage.</p>
+          <p>Browse headshots and production photography from across her career, or view the full credits on her resume.</p>
+          <div class="resume-tabs" style="margin-top:1.4rem">
+            <a class="btn btn--sm" href="photos.html">Headshots &amp; show photos</a>
+            <a class="btn btn--sm btn--ghost" href="resume.html">See full resume</a>
+          </div>
+        </div>
+        <aside class="reveal">
+          <div class="card">
+            <h3>Casting &amp; booking</h3>
+            <p style="font-size:.95rem;color:var(--muted)">Theater &middot; film &middot; commercial &middot; voice-over.</p>
+            <a class="btn btn--sm" href="contact.html" style="margin-top:.6rem">Get in touch</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+""" + cta_band()
+
+
+# ===================== PERFORMING: CHOREOGRAPHY =====================
+PERFORM_CHOREOGRAPHY = page_head("Performing · Choreography", "Choreography",
+    "Show choreography, combat and dance staging for theater, opera and competitive choirs.",
+    ['<a href="index.html">Home</a>', '<a href="performances.html">Performing</a>', 'Choreography']) + f"""
+    <section class="section">
+      <div class="container">
+        <p class="lead reveal">A retired professional dancer and dance captain, Jennifer has choreographed musicals, combat scenes and competitive swing choirs across the Midwest, New York and beyond.</p>
+        <div class="reveal" style="margin-top:1.4rem">
+{credits_table('Selected Choreography Credits', _CHOREO)}
+        </div>
+        <p class="note reveal" style="margin-top:1.5rem">For dance and dance-captain credits, see the <a href="resume.html#choreo">full resume</a>. Interested in choreography for your production? <a href="contact.html">Get in touch</a>.</p>
+      </div>
+    </section>
+""" + cta_band()
+
+
+# ===================== PERFORMING: EMCEE / SPEAKER =====================
+# Ongoing list of emceeing events. Add new ones as (date, event, location).
+_EMCEE_EVENTS = [
+    # ("Month DD, YYYY", "Event name", "Venue, City, ST"),
+]
+
+def _emcee_events_html():
+    if not _EMCEE_EVENTS:
+        return '          <p class="note">Upcoming emcee &amp; hosting dates will be listed here soon &mdash; check back, or <a href="contact.html">get in touch</a> to book Jennifer for your event.</p>'
+    items = "\n".join(
+        '            <li><span class="time">%s</span><div><strong>%s</strong><br>%s</div></li>' % e
+        for e in _EMCEE_EVENTS
+    )
+    return f'          <ul class="timeline">\n{items}\n          </ul>'
+
+PERFORM_EMCEE = page_head("Performing · Emcee &amp; Speaker", "Emcee &amp; Speaker",
+    "Warm, polished hosting for galas, benefits, pageants and community events.",
+    ['<a href="index.html">Home</a>', '<a href="performances.html">Performing</a>', 'Emcee &amp; Speaker']) + f"""
+    <section class="section">
+      <div class="container grid grid--sidebar">
+        <div class="reveal">
+          <p class="lead">With decades on stage and a natural ease with a live audience, Jennifer is a confident, charismatic host for galas, fundraisers, pageants, award nights and community celebrations &mdash; keeping events moving, engaging the room and adapting to whatever the moment calls for.</p>
+
+          <h2 style="margin-top:2rem">Emceeing events</h2>
+{_emcee_events_html()}
+
+          <h2 style="margin-top:2.5rem">Photos</h2>
+          <p class="note">Photos from Jennifer's hosting and emceeing engagements are coming soon.</p>
+        </div>
+        <aside class="reveal">
+          <div class="card">
+            <h3>Book Jennifer to host</h3>
+            <p style="font-size:.95rem;color:var(--muted)">Galas &middot; benefits &middot; pageants &middot; award nights &middot; community events.</p>
+            <a class="btn btn--sm" href="contact.html" style="margin-top:.6rem">Check availability</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+""" + cta_band()
+
+
 # ===================== PERFORMING: MEDIA / PRESS =====================
 MEDIA = page_head("Performing · Media", "Media &amp; Press",
     "Reviews, voice-over and commercial reels, film, and recorded music.",
@@ -1140,6 +1250,10 @@ if __name__ == "__main__":
     page("resume.html", "Resume", "Acting, performance and choreography resume for Jennifer Brown — actor, singer, dancer, soprano.", RESUME, "performing")
     page("photos.html", "Photo Gallery", "Headshots and production photography from Jennifer Brown's performing career.", PHOTOS, "performing")
     page("media.html", "Media & Press", "Press quotes, voice-over and commercial reels, film and recorded music from Jennifer Brown.", MEDIA, "performing")
+    page("perform-singing.html", "Singing", "Jennifer Brown — soprano, cabaret, concert and musical theater singer available for concerts, benefits and events.", PERFORM_SINGING, "performing")
+    page("perform-acting.html", "Acting", "Jennifer Brown — stage, film and commercial actor. Headshots, show photos and full performance resume.", PERFORM_ACTING, "performing")
+    page("perform-choreography.html", "Choreography", "Show choreography, combat staging and dance direction by Jennifer Brown for theater, opera and competitive choirs.", PERFORM_CHOREOGRAPHY, "performing")
+    page("perform-emcee.html", "Emcee & Speaker", "Book Jennifer Brown to emcee or host your gala, benefit, pageant or community event.", PERFORM_EMCEE, "performing")
     page("lessons-singing.html", "Singing Lessons", "Private voice lessons for all ages and abilities with Jennifer Brown in Rome, NY.", LESSONS_SINGING, "teaching")
     page("lessons-piano.html", "Piano Lessons", "Private piano lessons, one-on-one or with a friend, for children and adults.", LESSONS_PIANO, "teaching")
     page("lessons-acting.html", "Acting Lessons", "Year-round private acting coaching — auditions, scene study, on-camera and more.", LESSONS_ACTING, "teaching")
@@ -1149,4 +1263,4 @@ if __name__ == "__main__":
     page("nutrition.html", "Behavioral Nutrition", "Sustainable, grace-filled nutrition coaching with Jennifer Brown — behavioral changes for a lifestyle, not a diet, in person in Rome, NY or online.", NUTRITION, "fitness")
     page("age-well.html", "Age Well & Vibrantly", "Strength, balance and mobility coaching for healthy, vibrant aging — all ages, in person or online.", AGE_WELL, "fitness")
     page("contact.html", "Contact", "Contact Jennifer Brown about lessons, coaching or performance bookings in Rome, NY.", CONTACT, "contact")
-    print("\nDone — 14 pages generated.")
+    print("\nDone — 18 pages generated.")
