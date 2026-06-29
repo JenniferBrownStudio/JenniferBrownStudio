@@ -286,8 +286,8 @@ HOME = """    <section class="hero">
         </div>
         <div class="card reveal" style="display:flex;flex-direction:column;justify-content:center">
           <p class="eyebrow">Words to keep</p>
-          <blockquote class="quote">There are two kinds of people: those who say to God, &lsquo;Thy will be done,&rsquo; and those to whom God says, &lsquo;All right, then, have it your way.&rsquo;
-            <cite>&mdash; C. S. Lewis</cite>
+          <blockquote class="quote">Peter did not feel very brave; indeed, he felt he was going to be sick. But that made no difference to what he had to do.
+            <cite>&mdash; C. S. Lewis, <em>The Lion, the Witch and the Wardrobe</em></cite>
           </blockquote>
         </div>
       </div>
