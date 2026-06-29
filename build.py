@@ -319,7 +319,7 @@ BIO = page_head("About", "Meet Jennifer", "Performer, teacher and coach with a v
         </div>
         <aside class="reveal">
           <div class="card">
-            <img src="assets/img/headshots/Copy_of_green.jpg" alt="Jennifer Brown" style="border-radius:10px;margin-bottom:1rem">
+            <img src="assets/img/headshots/bio-denim.jpg" alt="Jennifer Brown" style="border-radius:10px;margin-bottom:1rem">
             <h3>At a glance</h3>
             <ul class="facts" style="margin-top:.6rem">
               <li><span class="k">Voice</span> Soprano, 3+ octaves</li>
