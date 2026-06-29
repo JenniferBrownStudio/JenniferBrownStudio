@@ -1077,38 +1077,83 @@ PERFORM_CHOREOGRAPHY = page_head("Performing · Choreography", "Choreography",
 
 
 # ===================== PERFORMING: EMCEE / SPEAKER =====================
-# Ongoing list of emceeing events. Add new ones as (date, event, location).
+# Two distinct roles on one page:
+#   Emcee  = host/entertainer for fun events (galas, benefits, pageants...)
+#   Speaker = keynote / educator role (talks, seminars, conferences...)
+# Add events as (date, event, location).
 _EMCEE_EVENTS = [
     # ("Month DD, YYYY", "Event name", "Venue, City, ST"),
 ]
+_SPEAKER_EVENTS = [
+    # ("Month DD, YYYY", "Talk / topic", "Venue, City, ST"),
+]
 
-def _emcee_events_html():
-    if not _EMCEE_EVENTS:
-        return '          <p class="note">Upcoming emcee &amp; hosting dates will be listed here soon &mdash; check back, or <a href="contact.html">get in touch</a> to book Jennifer for your event.</p>'
+def _event_list_html(events, empty_msg):
+    if not events:
+        return f'          <p class="note">{empty_msg}</p>'
     items = "\n".join(
         '            <li><span class="time">%s</span><div><strong>%s</strong><br>%s</div></li>' % e
-        for e in _EMCEE_EVENTS
+        for e in events
     )
     return f'          <ul class="timeline">\n{items}\n          </ul>'
 
+_EMCEE_EMPTY = 'Emcee &amp; hosting dates will be listed here soon &mdash; check back, or <a href="contact.html">get in touch</a> to book Jennifer for your event.'
+_SPEAKER_EMPTY = 'Speaking engagements will be listed here soon &mdash; or <a href="contact.html">get in touch</a> to book Jennifer for your conference or event.'
+_EMCEE_LIST = _event_list_html(_EMCEE_EVENTS, _EMCEE_EMPTY)
+_SPEAKER_LIST = _event_list_html(_SPEAKER_EVENTS, _SPEAKER_EMPTY)
+
 PERFORM_EMCEE = page_head("Performing · Emcee &amp; Speaker", "Emcee &amp; Speaker",
-    "Warm, polished hosting for galas, benefits, pageants and community events.",
+    "Two roles, one stage presence &mdash; the charismatic host of your event, and the keynote speaker who teaches and inspires.",
     ['<a href="index.html">Home</a>', '<a href="performances.html">Performing</a>', 'Emcee &amp; Speaker']) + f"""
     <section class="section">
+      <div class="container">
+        <div class="resume-tabs reveal">
+          <a class="btn btn--sm" href="#emcee">Emcee / Host</a>
+          <a class="btn btn--sm btn--ghost" href="#speaker">Keynote Speaker</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="emcee" style="padding-top:0">
       <div class="container grid grid--sidebar">
         <div class="reveal">
-          <p class="lead">With decades on stage and a natural ease with a live audience, Jennifer is a confident, charismatic host for galas, fundraisers, pageants, award nights and community celebrations &mdash; keeping events moving, engaging the room and adapting to whatever the moment calls for.</p>
+          <p class="eyebrow">Emcee / Host</p>
+          <h2 style="margin-top:.2rem">Host of your event</h2>
+          <p class="lead">With decades on stage and a natural ease with a live audience, Jennifer is a confident, charismatic host for galas, fundraisers, pageants, award nights and community celebrations &mdash; keeping the energy up, the program moving and the room engaged.</p>
 
-          <h2 style="margin-top:2rem">Emceeing events</h2>
-{_emcee_events_html()}
+          <h3 style="margin-top:1.8rem">Hosting events</h3>
+{_EMCEE_LIST}
 
-          <h2 style="margin-top:2.5rem">Photos</h2>
+          <h3 style="margin-top:2rem">Photos</h3>
           <p class="note">Photos from Jennifer's hosting and emceeing engagements are coming soon.</p>
         </div>
         <aside class="reveal">
           <div class="card">
             <h3>Book Jennifer to host</h3>
             <p style="font-size:.95rem;color:var(--muted)">Galas &middot; benefits &middot; pageants &middot; award nights &middot; community events.</p>
+            <a class="btn btn--sm" href="contact.html" style="margin-top:.6rem">Check availability</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="speaker" style="padding-top:0">
+      <div class="container grid grid--sidebar">
+        <div class="reveal">
+          <p class="eyebrow">Keynote Speaker</p>
+          <h2 style="margin-top:.2rem">Speaker &amp; educator</h2>
+          <p class="lead">As a keynote speaker, Jennifer steps into her educator role &mdash; sharing what she has learned across performance, teaching and wellness to inform, encourage and equip an audience. Engaging, practical and warm, her talks are tailored to your group and occasion.</p>
+
+          <h3 style="margin-top:1.8rem">Speaking engagements</h3>
+{_SPEAKER_LIST}
+
+          <h3 style="margin-top:2rem">Photos</h3>
+          <p class="note">Keynote speaking photos are coming soon.</p>
+        </div>
+        <aside class="reveal">
+          <div class="card">
+            <h3>Book Jennifer to speak</h3>
+            <p style="font-size:.95rem;color:var(--muted)">Keynotes &middot; conferences &middot; seminars &middot; workshops &middot; panels.</p>
             <a class="btn btn--sm" href="contact.html" style="margin-top:.6rem">Check availability</a>
           </div>
         </aside>
