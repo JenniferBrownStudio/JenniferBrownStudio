@@ -1301,4 +1301,9 @@ if __name__ == "__main__":
     page("nutrition.html", "Behavioral Nutrition", "Sustainable, grace-filled nutrition coaching with Jennifer Brown — behavioral changes for a lifestyle, not a diet, in person in Rome, NY or online.", NUTRITION, "fitness")
     page("age-well.html", "Age Well & Vibrantly", "Strength, balance and mobility coaching for healthy, vibrant aging — all ages, in person or online.", AGE_WELL, "fitness")
     page("contact.html", "Contact", "Contact Jennifer Brown about lessons, coaching or performance bookings in Rome, NY.", CONTACT, "contact")
+
+    # Custom domain for GitHub Pages (kept on every build so it's never lost)
+    with open(os.path.join(ROOT, "CNAME"), "w") as f:
+        f.write("jenniferbrownstudio.fit\n")
+
     print("\nDone — 18 pages generated.")
