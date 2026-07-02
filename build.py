@@ -1234,11 +1234,19 @@ PERFORM_EMCEE = page_head("Performing · Emcee &amp; Speaker", "Emcee &amp; Spea
           <h2 style="margin-top:.2rem">Speaker &amp; educator</h2>
           <p class="lead">As a keynote speaker, Jennifer steps into her educator role &mdash; sharing what she has learned across performance, teaching and wellness to inform, encourage and equip an audience. Engaging, practical and warm, her talks are tailored to your group and occasion.</p>
 
+          <figure style="margin:1.6rem 0">
+            <img src="assets/img/emcee/speaker-main.jpg" alt="Jennifer Brown speaking, arms wide open and animated, presenting to a group" style="width:100%;border-radius:12px;box-shadow:var(--shadow-md)">
+          </figure>
+
           <h3 style="margin-top:1.8rem">Speaking engagements</h3>
 {_SPEAKER_LIST}
 
-          <h3 style="margin-top:2rem">Photos</h3>
-          <p class="note">Keynote speaking photos are coming soon.</p>
+          <h3 style="margin-top:2rem">More from the podium</h3>
+          <p class="note" style="margin-bottom:1rem">Presenting a wellness keynote to a larger audience.</p>
+          <div class="gallery">
+            <a href="assets/img/emcee/speaker-sitrin-1.jpg" data-lightbox data-caption="Jennifer Brown delivering a keynote"><img src="assets/img/emcee/speaker-sitrin-1.jpg" alt="Jennifer Brown delivering a keynote presentation" loading="lazy"></a>
+            <a href="assets/img/emcee/speaker-sitrin-2.jpg" data-lightbox data-caption="Jennifer Brown speaking to a group"><img src="assets/img/emcee/speaker-sitrin-2.jpg" alt="Jennifer Brown speaking to a seated audience" loading="lazy"></a>
+          </div>
         </div>
         <aside class="reveal">
           <div class="card">
