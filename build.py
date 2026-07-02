@@ -1075,7 +1075,79 @@ PERFORM_CHOREOGRAPHY = page_head("Performing · Choreography", "Choreography",
 #   Speaker = keynote / educator role (talks, seminars, conferences...)
 # Add events as (date, event, location).
 _EMCEE_EVENTS = [
-    # ("Month DD, YYYY", "Event name", "Venue, City, ST"),
+    ("June 27, 2026", "Mitzvah", "DoubleTree by Hilton"),
+    ("June 13, 2026", "Mitzvah", "Embassy Suites, Destiny USA"),
+    ("June 6, 2026", "Mitzvah", "Marriott Syracuse Downtown"),
+    ("Feb 7, 2026", "Mitzvah", "Drumlins"),
+    ("Nov 15, 2025", "Mitzvah", "Traditions at the Links"),
+    ("Nov 1, 2025", "Wedding", "Traditions at the Links"),
+    ("Oct 25, 2025", "Mitzvah", "Embassy Suites, Destiny USA"),
+    ("Sept 26, 2025", "Wedding", "Traditions at the Links"),
+    ("Sept 20, 2025", "Wedding", "Heritage Hill Brewhouse"),
+    ("Aug 9, 2025", "Wedding", "Wolf Oak Acres"),
+    ("June 7, 2025", "Bar Mitzvah", "Onondaga Country Club"),
+    ("Jan 4, 2025", "Mitzvah", "Drumlin's"),
+    ("Dec 7, 2024", "Christmas Party", "Syracuse Corvette Club"),
+    ("Nov 23, 2024", "Corporate Party", "Turning Stone Resort"),
+    ("Oct 26, 2024", "Wedding", "Clay, NY (Halloween wedding reception)"),
+    ("Oct 19, 2024", "Bat Mitzvah", "Drumlin's"),
+    ("Oct 12, 2024", "Wedding", "Embassy Suites, Destiny USA"),
+    ("Sept 19, 2024", "Wedding", "Tricolla Farms"),
+    ("Aug 23, 2024", "Wedding", "Traditions at the Links"),
+    ("June 22, 2024", "Wedding", "Traditions at the Links"),
+    ("May 4, 2024", "Mitzvah", "Embassy Suites, Destiny USA"),
+    ("Mar 9, 2024", "Mitzvah", "Sheraton Syracuse University"),
+    ("Feb 17, 2024", "Mitzvah", "Breezes"),
+    ("Dec 23, 2023", "Mitzvah", "Temple Beth Sholom"),
+    ("Dec 9, 2023", "Christmas Party", "Syracuse Corvette Club"),
+    ("Nov 11, 2023", "Anniversary Event", "The Temple &mdash; 150th Anniversary"),
+    ("Oct 21, 2023", "Wedding", "Traditions at the Links"),
+    ("Oct 8, 2023", "Wedding", "Arrowhead Lodge"),
+    ("Sept 23, 2023", "Wedding", "Traditions at the Links"),
+    ("Sept 2, 2023", "Wedding", "Woods Valley"),
+    ("Aug 19, 2023", "Pool Party", "Private pool/housewarming party"),
+    ("July 16, 2023", "Wedding", "Syracuse Zoo"),
+    ("July 8, 2023", "Wedding", "Dinosaur BBQ"),
+    ("June 24, 2023", "Mitzvah", "Drumlin's"),
+    ("May 20, 2023", "Wedding", "Jake's Grub &amp; Grog"),
+    ("March 25, 2023", "Mitzvah", "Embassy Suites, Destiny USA"),
+    ("March 18, 2023", "Mitzvah", "The Temple"),
+    ("Dec 25, 2022", "Christmas Party", "Greystone"),
+    ("Dec 2, 2022", "Christmas Party", "Syracuse Corvette Club"),
+    ("Nov 5, 2022", "Mitzvah", "Traditions at the Links"),
+    ("Oct 22, 2022", "Wedding", "Chantelle Marie Lakehouse"),
+    ("Oct 8, 2022", "Wedding", "Drumlin's"),
+    ("Oct 8, 2022", "Mitzvah", "The Temple"),
+    ("Oct 1, 2022", "Wedding", "Mirabeau Farm"),
+    ("Sept 24, 2022", "Bat Mitzvah", "Sky Armory"),
+    ("Sept 17, 2022", "Wedding", "Timber Banks Golf Resort"),
+    ("Aug 26, 2022", "Wedding", "Heritage Farm"),
+    ("Aug 21, 2022", "Wedding", "Private family barn"),
+    ("Aug 20, 2022", "Wedding", "Copper Top Tavern"),
+    ("Aug 13, 2022", "Wedding", "Lakeshore Yacht Club"),
+    ("July 2, 2022", "Wedding", "Mirabeau Farm"),
+    ("Jun 5, 2022", "Bat Mitzvah", "Ithaca Farmers Market"),
+    ("May 29, 2022", "Bat Mitzvah", "Private home, Manlius"),
+    ("May 7, 2022", "Bat Mitzvah", "Lemongrass"),
+    ("Jan 16, 2022", "Wedding", "Alexandria's, Oswego"),
+    ("Jan 15, 2022", "Wedding", "Tailwater Lodge"),
+    ("Dec 4, 2021", "Christmas Party", "Syracuse Corvette Club"),
+    ("Nov 13, 2021", "Wedding", "Greystone"),
+    ("Oct 23, 2021", "Wedding", "Greystone"),
+    ("Oct 16, 2021", "Mitzvah", "Sheraton Syracuse University"),
+    ("Oct 9, 2021", "Wedding", "Collaco Winery"),
+    ("Oct 9, 2021", "Wedding", "Greystone"),
+    ("Oct 2, 2021", "Bat Mitzvah", "Embassy Suites, Destiny USA"),
+    ("Sept 25, 2021", "Wedding", "Greystone"),
+    ("Sept 19, 2021", "Wedding", "Greystone"),
+    ("Sept 12, 2021", "Wedding", "Arrowhead Lodge"),
+    ("Sept 5, 2021", "Wedding", "Lafayette Hotel, Buffalo"),
+    ("Sept 4, 2021", "Wedding", "Traditions at the Links"),
+    ("August 28, 2021", "Wedding", "MKJ Farm"),
+    ("Aug 21, 2021", "Wedding", "Greystone"),
+    ("July 11, 2021", "Wedding", "Private home, Central Square NY"),
+    ("July 4, 2021", "Wedding", "Traditions at the Links"),
+    ("May 29, 2021", "Wedding", "Greystone"),
 ]
 _SPEAKER_EVENTS = [
     # ("Month DD, YYYY", "Talk / topic", "Venue, City, ST"),
@@ -1090,9 +1162,33 @@ def _event_list_html(events, empty_msg):
     )
     return f'          <ul class="timeline">\n{items}\n          </ul>'
 
+def _events_by_year_html(events, empty_msg):
+    """Render (date, type, venue) events grouped under year sub-headings.
+    Assumes events are pre-sorted newest-first. The per-row date drops the
+    year since it's shown as the group heading."""
+    if not events:
+        return f'          <p class="note">{empty_msg}</p>'
+    from collections import OrderedDict
+    groups = OrderedDict()
+    for date, typ, venue in events:
+        year = date.rsplit(",", 1)[-1].strip()
+        short = date.rsplit(",", 1)[0].strip()
+        groups.setdefault(year, []).append((short, typ, venue))
+    blocks = []
+    for year, evs in groups.items():
+        rows = "\n".join(
+            '            <li><span class="time">%s</span><div><strong>%s</strong><br>%s</div></li>' % e
+            for e in evs
+        )
+        blocks.append(
+            f'          <h4 class="event-year" style="margin:1.6rem 0 .5rem;color:var(--gold)">{year}</h4>\n'
+            f'          <ul class="timeline">\n{rows}\n          </ul>'
+        )
+    return "\n".join(blocks)
+
 _EMCEE_EMPTY = 'Emcee &amp; hosting dates will be listed here soon &mdash; check back, or <a href="contact.html">get in touch</a> to book Jennifer for your event.'
 _SPEAKER_EMPTY = 'Speaking engagements will be listed here soon &mdash; or <a href="contact.html">get in touch</a> to book Jennifer for your conference or event.'
-_EMCEE_LIST = _event_list_html(_EMCEE_EVENTS, _EMCEE_EMPTY)
+_EMCEE_LIST = _events_by_year_html(_EMCEE_EVENTS, _EMCEE_EMPTY)
 _SPEAKER_LIST = _event_list_html(_SPEAKER_EVENTS, _SPEAKER_EMPTY)
 
 PERFORM_EMCEE = page_head("Performing · Emcee &amp; Speaker", "Emcee &amp; Speaker",
@@ -1112,9 +1208,9 @@ PERFORM_EMCEE = page_head("Performing · Emcee &amp; Speaker", "Emcee &amp; Spea
         <div class="reveal">
           <p class="eyebrow">Emcee / Host</p>
           <h2 style="margin-top:.2rem">Host of your event</h2>
-          <p class="lead">With decades on stage and a natural ease with a live audience, Jennifer is a confident, charismatic host for galas, fundraisers, pageants, award nights and community celebrations &mdash; keeping the energy up, the program moving and the room engaged.</p>
+          <p class="lead">With decades on stage and a natural ease with a live audience, Jennifer is a confident, charismatic host for weddings, bar &amp; bat mitzvahs, holiday and corporate parties, and community celebrations &mdash; keeping the energy up, the program moving and the room engaged. Since 2021 she has emceed {len(_EMCEE_EVENTS)}+ events across Central New York in partnership with The Great Music Company.</p>
 
-          <h3 style="margin-top:1.8rem">Hosting events</h3>
+          <h3 style="margin-top:1.8rem">Events Jennifer has emceed</h3>
 {_EMCEE_LIST}
 
           <h3 style="margin-top:2rem">Photos</h3>
