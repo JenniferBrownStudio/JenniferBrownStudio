@@ -1242,9 +1242,12 @@ PERFORM_EMCEE = page_head("Performing · Emcee &amp; Speaker", "Emcee &amp; Spea
 {_SPEAKER_LIST}
 
           <h3 style="margin-top:2rem">More from the podium</h3>
-          <p class="note" style="margin-bottom:1rem">Presenting a wellness keynote to a larger audience.</p>
+          <p class="note" style="margin-bottom:1rem">Moments from Jennifer's wellness talks and keynotes. Tap any image to view it full size.</p>
           <div class="gallery">
-            <a href="assets/img/emcee/speaker-sitrin-1.jpg" data-lightbox data-caption="Jennifer Brown delivering a keynote"><img src="assets/img/emcee/speaker-sitrin-1.jpg" alt="Jennifer Brown delivering a keynote presentation" loading="lazy"></a>
+            <a href="assets/img/emcee/speaker-cny-1.jpg" data-lightbox data-caption="Jennifer Brown presenting a wellness talk"><img src="assets/img/emcee/speaker-cny-1.jpg" alt="Jennifer Brown addressing the room during a wellness talk" loading="lazy"></a>
+            <a href="assets/img/emcee/speaker-cny-2.jpg" data-lightbox data-caption="Jennifer Brown, mid-gesture during a talk"><img src="assets/img/emcee/speaker-cny-2.jpg" alt="Jennifer Brown engaged and gesturing during a talk" loading="lazy"></a>
+            <a href="assets/img/emcee/speaker-cny-3.jpg" data-lightbox data-caption="Jennifer Brown speaking"><img src="assets/img/emcee/speaker-cny-3.jpg" alt="Jennifer Brown with a warm expression while speaking" loading="lazy"></a>
+            <a href="assets/img/emcee/speaker-sitrin-1.jpg" data-lightbox data-caption="Jennifer Brown delivering a keynote to a larger audience"><img src="assets/img/emcee/speaker-sitrin-1.jpg" alt="Jennifer Brown delivering a keynote presentation" loading="lazy"></a>
             <a href="assets/img/emcee/speaker-sitrin-2.jpg" data-lightbox data-caption="Jennifer Brown speaking to a group"><img src="assets/img/emcee/speaker-sitrin-2.jpg" alt="Jennifer Brown speaking to a seated audience" loading="lazy"></a>
           </div>
         </div>
