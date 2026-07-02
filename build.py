@@ -1210,11 +1210,12 @@ PERFORM_EMCEE = page_head("Performing · Emcee &amp; Speaker", "Emcee &amp; Spea
           <h2 style="margin-top:.2rem">Host of your event</h2>
           <p class="lead">With decades on stage and a natural ease with a live audience, Jennifer is a confident, charismatic host for weddings, bar &amp; bat mitzvahs, holiday and corporate parties, and community celebrations &mdash; keeping the energy up, the program moving and the room engaged. Since 2021 she has emceed {len(_EMCEE_EVENTS)}+ events across Central New York in partnership with The Great Music Company.</p>
 
+          <figure style="margin:1.6rem 0">
+            <img src="assets/img/emcee/emcee-hosting.jpg" alt="Jennifer Brown emceeing an event, microphone in hand, on the dance floor of a ballroom" style="width:100%;border-radius:12px;box-shadow:var(--shadow-md)">
+          </figure>
+
           <h3 style="margin-top:1.8rem">Events Jennifer has emceed</h3>
 {_EMCEE_LIST}
-
-          <h3 style="margin-top:2rem">Photos</h3>
-          <p class="note">Photos from Jennifer's hosting and emceeing engagements are coming soon.</p>
         </div>
         <aside class="reveal">
           <div class="card">
