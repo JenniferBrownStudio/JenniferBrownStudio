@@ -4,7 +4,7 @@
     {
       "name": "static",
       "runtimeExecutable": "/bin/sh",
-      "runtimeArgs": ["-c", "cd /private/tmp/claude-501/-Users-jenniferbrown-Documents-GitHub-JenniferBrownStudio/22e0e976-590b-4e9e-be36-3de1cbf79462/scratchpad/preview_site && exec python3 -m http.server 8099"],
+      "runtimeArgs": ["-c", "cd /private/tmp/claude-501/-Users-jenniferbrown-Documents-GitHub-JenniferBrownStudio/e1c1c789-d536-48cf-a0f4-d7a4fd6b8e54/scratchpad/preview_site && exec python3 -m http.server 8099"],
       "port": 8099,
       "autoPort": false
     }
