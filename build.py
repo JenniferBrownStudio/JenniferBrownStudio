@@ -729,7 +729,7 @@ AGE_WELL = page_head("Fitness &amp; Wellness · Healthy Aging", "Age Well &amp; 
 
 # ===================== PERFORMING: PERFORMANCE DATES =====================
 _PERFS = [
-    ("Nov 24&ndash;25, 2025", '<a href="https://www.facebook.com/share/p/1E62bDKh7D/" target="_blank" rel="noopener" style="text-decoration:underline">&ldquo;The Lion, the Witch &amp; the Wardrobe&rdquo;</a> &mdash; TANYS Festival, Rome, NY'),
+    ("Nov 24&ndash;25, 2025", '<a href="https://www.facebook.com/share/p/1DyFAz6SCx/" target="_blank" rel="noopener" style="text-decoration:underline">&ldquo;The Lion, the Witch &amp; the Wardrobe&rdquo;</a> &mdash; TANYS Festival, Rome, NY'),
     ("Oct 3&ndash;4, 2025", "&ldquo;The Lion, the Witch &amp; the Wardrobe&rdquo; &mdash; Rome Community Theater"),
     ("May 29&ndash;Jun 1, 2025", '<a href="https://www.facebook.com/share/p/19bVNoa5Dt/" target="_blank" rel="noopener" style="text-decoration:underline">&ldquo;Private Lives&rdquo;</a> &mdash; Rome Community Theater'),
     ("Jun 7&ndash;9 &amp; 14&ndash;16, 2024", '<a href="https://www.facebook.com/share/p/1Jmo4XVGEc/" target="_blank" rel="noopener" style="text-decoration:underline">&ldquo;The Spitfire Grill&rdquo;</a> &mdash; Rome Community Theater'),
