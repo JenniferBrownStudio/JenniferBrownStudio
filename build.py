@@ -729,6 +729,8 @@ AGE_WELL = page_head("Fitness &amp; Wellness · Healthy Aging", "Age Well &amp; 
 
 # ===================== PERFORMING: PERFORMANCE DATES =====================
 _PERFS = [
+    ("May 29&ndash;Jun 1, 2025", '<a href="https://www.facebook.com/share/p/19bVNoa5Dt/" target="_blank" rel="noopener" style="text-decoration:underline">&ldquo;Private Lives&rdquo;</a> &mdash; Rome Community Theater'),
+    ("Jun 7&ndash;9 &amp; 14&ndash;16, 2024", '<a href="https://www.facebook.com/share/p/1Jmo4XVGEc/" target="_blank" rel="noopener" style="text-decoration:underline">&ldquo;The Spitfire Grill&rdquo;</a> &mdash; Rome Community Theater'),
     ("Apr 26 &amp; 27, 2024", '<a href="https://www.facebook.com/jennifer.brown.815600/posts/pfbid02boBKzNoPFNaG5RfFFSuZhhSVBYhHbPkuuJ6G75VxsGAGgzbcqAuMGTNosbF3LRKRl" target="_blank" rel="noopener" style="text-decoration:underline">&ldquo;Not My Cup of Tea&rdquo;</a> &amp; <a href="https://www.facebook.com/jennifer.brown.815600/posts/pfbid0F6dgHfu57de32ZUrbRThtLbdpHjA1LVADhDVeHpKtxb2oyDbC4knXigELZuof1Zql" target="_blank" rel="noopener" style="text-decoration:underline">&ldquo;Anti-Depressants&rdquo;</a> &mdash; Utica University'),
     ("May 25, 2012", "&ldquo;Songs of the 1910s&rdquo; Concert &mdash; Elder Haven, Canastota, NY"),
     ("Dec 28, 2011", "Christmas Concerts &mdash; Ava Dorfman Center, Rome &amp; Elder Haven, Canastota, NY"),
